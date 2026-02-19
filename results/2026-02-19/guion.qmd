@@ -2,7 +2,7 @@
 title: "Práctica 1. Nociones de Bash y alineamientos básicos"
 lang: es
 date: today
-execute: 
+execute:
   output: true
   error: true
 engine: knitr
