@@ -1,0 +1,935 @@
+########################################
+# Program: needle
+# Rundate: Sun 22 Feb 2026 22:11:33
+# Commandline: needle
+#    -asequence ChimpChr17.fa
+#    -bsequence ChimpSMARCD2.fa
+#    -gapopen 10.0
+#    -gapextend 0.1
+#    -auto
+#    -outfile aln2_chimp.txt
+# Align_format: srspair
+# Report_file: aln2_chimp.txt
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: 1
+# 2: PNJ01291.1
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.1
+#
+# Length: 11232
+# Identity:     515/11232 ( 4.6%)
+# Similarity:   515/11232 ( 4.6%)
+# Gaps:       10570/11232 (94.1%)
+# Score: 1272.834
+# 
+#
+#=======================================
+
+1                  1 TGTTCGTAACTTAACGTTCATTCTCTCTCCCACCCCTAGGTCATGCAGAA     50
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                 51 GGACAGTGAGAAAAACATGTCCATCAAGAAATTATGGAAGTGAGTGGACA    100
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                101 GCCTTTGTGTGTATCTCTCCAATAAAGCTCTGTGGGCCAAGTCCTCTAGG    150
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                151 ACTCCAGTCTGTTAATGAGGGCTGTGCTGTTCAAGGACCAGGTCCAGGCA    200
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                201 CCACCAATAGACAAAAGGATTTATTTGGAAATTTCCAAACCTGCCAGAAG    250
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                251 TGGCACTCGCCAAGCCCTAGGCCCACCCTCCTCACCAAGCTCCAAAGGGC    300
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                301 AACACCAGTCCTCCCAGCCTCCCCATTCACCTTACCCTGGCCTCCACATG    350
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                351 CACATACCCCATACCTCAGGCCATGCTAGAGAACTGGAGTGTCCCCTCCC    400
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                401 TGGCCCAAGCCGCTGGAGAGGCAGCCCTCTGGCATCCCAGGAGATGATGG    450
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                451 CGGCCAGAGCCGCTTGCATAGATTGAGGAAAGAAAACAAGGAGGCACCTA    500
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                501 ACAGGCTCCCTGAAAACCCCCAACTTACCCCTGTACAAAAAAAGTGGCTC    550
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                551 CCACATAGAAAACTTGCTCCCAAAATAGTGCAAATACCCAAAGGAAAGGA    600
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                601 AAAAACCAGCAGCAAGGCTGGGCTTGTAGGAATGGCAAAGAACTTTGGTT    650
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                651 TAGAAAGGCTAGGAAGAGTCTGGGCTGCACCTCCTCTTCCTAGCCCAGCT    700
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                701 CCCCAGAGCCAGCTCTGACCCTCGCCCCAGGGGGAGTCTGTAAACATGCA    750
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                751 AACCCAGCAGCCTTTGGTTCGGAAATGTCTGTTACAATGTCAAAGCACAG    800
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                801 CCTCCAGCAGTCCTACTTGGGCCTGCCTGCAGGGGGGCAGAGGAGGCATC    850
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                851 TGCTGAACCCAATTAAAGCCAATGCAAAAAGTATAAGGCTTTGGGGACCA    900
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                901 AGCAACAAGGAATCCTATCACTACATTTATAAAACTAAAGCTGGAGAGTA    950
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1                951 GAGGGTGACAGCAGACACTCCTCACCCCAGCCTACGTGTCTGCGGCCCCA   1000
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1001 GCAAGGACCCAGAGGGTGGTCTCCCTCCAGGCTCCAGGGCTGGGAAGAAA   1050
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1051 GATCCCTGAGCAGTTAGGTCAGGCGAATTCCCAGCACCTGTTCCAGTTCC   1100
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1101 TGCCTTCGCTGCTGCACCTGGAGAAGGGAGAAACCAAGTGGCTCAGGCCT   1150
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1151 TTGCTACTCACGGCCAAATGAGGGAAAACAGGGCAGAGCCCCACCTTGGC   1200
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1201 AAAGATGTGCCTGCCTACTGCTTCCTGGGCCCAGGGCTGGTGGTAGAAAG   1250
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1251 CAGCTCGTCTCTCCTCCTCAGGATTTCCAATCACATCAGTGATGATCTGC   1300
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1301 AAAGAGCCAGGAGGAAAGCCATAGCATAATCCCCACCCCTGGGCTAATCC   1350
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1351 ACCCTGGGAACTGCTGTGGGTAAAAATCACCCAGAGCTTTACATAGGAGT   1400
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1401 CCCCTCGGGAAAGAGGACTACACCTTGAGGTCTCGGCGCTGGGAACGGAG   1450
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1451 CCATTCCTGGATGAAGTCCTGGGGGTCGGTGCTAAAACTGAGCATGAAAT   1500
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1501 CTCTCTGGGTCTTCAGCTGGTTGATGGACTCAATGGTCTCATGGATCTGG   1550
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1551 AGAAGATACCTGTGTCAGACTGTGCCCCCAAAGCTTAAATGCAAGCAACT   1600
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1601 GAGCCAGAGTTCCCATCCCGTCCTCCAGGTGCTACATGTATGGAAATGCT   1650
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1651 GGACAGAGCCAGCCCACCCCAATCCTGGGCCCCAGAGGAAGCTGTCGAGC   1700
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1701 CAGAGGGCCCACCTTAACATCAAGGGAGGCGATCTCCTGCTGATTGGTGG   1750
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1751 TAGAGGCCAGAAAATTGCTCATTTGGGCCTTCAGTGGGTCGTCCACCTCC   1800
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1801 ACATCGATGTCGTAACAGGCTGTCTTCTTCTGGTCGTTAGGGTCGACACT   1850
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1851 GCAGGCAGCACATGGGGAGGGAAGGCACATAGCTGACTTCATCCTGCCCA   1900
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1901 CCTGGGCCAAATCTGGGGCCCATTCTCTGCACACACTCAGGGAAAAAGAA   1950
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               1951 ACCTGATGCTTTCTTTGGCTTTAGTTCAAGCCAAGGGTGAATCTGCTCTT   2000
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2001 AGAAGAGCCTTCCTGTCCCCCTCCTTGCATTTACCTAATGACATGGTTGA   2050
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2051 TGACAATGGGGTCTGGATGCTGCAGCAACCCTGCCAGCTTCATGGGAATC   2100
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2101 TCGGAGAAACGGAGTCGGCCACAACTGAAGATCTGGAGGAAATACGAAAG   2150
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2151 GCTCAGCGTTGGCTTGTGGGCACAGTGGAGTGGACCATTCCAGGACCAGT   2200
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2201 GAGGGCAGCAGTCTGCAGGCTGTGGCCAAGGAGTAGCCCAGCAGGCAAGG   2250
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2251 CAAGGGCTGAGAAAACAGGGGGGCTGGCATCTGGCTAACCTGGCGGAAGT   2300
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2301 AACGGTTGCAGTTGATGTACTCCCGCTCGTGCCCATCCTGCAGCTGGTTG   2350
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2351 TGCTTGATGTAAAGCCACAGGGCCTGCATGATGGCGGCCCTCGTCTGCGT   2400
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2401 GTGCACTCCCAGCAGCCTTGCCAATCGGGGGTCTAATTTGTACTGGGGAG   2450
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2451 GCTGGAGTTGGATGGAGGGGAGTCAGAACGGGTTCTTATAGTAAAACAGT   2500
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2501 GGGAAAACAGGGCAGGGACAGGAAGGGTTTCTAGGAACCAGCTCCCCTCC   2550
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2551 TGAGGGGTCCCTGTGGGCCCAGAAATGACCCCAGGGCCTCTGTCACCTGA   2600
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2601 TGATCCAGCATGAGCAGGAGGGTGCACTTGACGTTGAGGTCTCCAGGCCG   2650
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2651 TTTTACTTGGAAGCCATCTGTCTCCTGGGTGGTGGGCATCCGGTGCCACT   2700
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2701 GGCAGGGAGGGAAGCATGGCTTATCACCAAGGGGGTGGGCGTGAACACAG   2750
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2751 GGCCTCCCAAGGGCCCTGAGGCCATTTCCCTGCCAAACCTGCACATCAGC   2800
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2801 CTGCTTCTGCCCCAGGCCCACTCTCACCTCCACCAGGTGATTGTCAGGCC   2850
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2851 CGTACAGCTCCTTGTCCAGCTCAATGACGAGGCTCTTAAAGAATGAAGAA   2900
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2901 AACTTCCTCTTCTGTTTGCTAGGCTGGGGATGGAAAGGGGTGTGAGATGG   2950
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               2951 TGCTGCTGAGCTCTCAAATCTCAAGCTATGCTAAATCCCAAGAAAGAGAA   3000
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3001 GCCCCATTTCAGCCCTGGAGCTCCGGGTACTGAAGATTCCTGGGCCCTGA   3050
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3051 AGGATGGAAGCAGGACTCTGGGCAGACTGGAGGCAGGGAAATGGTGCCCT   3100
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3101 CTTGCAGCCCACGAGGGACTTCCTCGAGACACTCGACTGCCATCTGCAGG   3150
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3151 AACATTGTAATAACCACACAAATCAACCTCCAACGGGCTTGGAGCAGCGC   3200
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3201 CCCCCTCCCTATGGCAGGACTTCTCTGGGAGTGCCCAAGTGTCTGGCCCA   3250
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3251 GTCTTTTTTTTTTCTGAGACACAATCTCACTCTGTCACCCAGGCTGAAGT   3300
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3301 GCAGTGGTGTGATCATAACTCACTGAAGCTCGACCTCCTGGGCTCAAGCC   3350
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3351 ATCCTCCTGCATCAGCCTTATGAGTAGCTGGGACTACAGGCGCATGCCAC   3400
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3401 CACACCCAGCTAATTTTTAAATTTTTTGTAGAGATGGGGTCTGGCTCTGC   3450
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3451 TGCTCAGGCTAGTATCAAACTCCTTGGTCTCAGTCTTAAACCCACACAGG   3500
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3501 CCTCCTTCCCTCCAGAACCTCCCTCCCCAACTCACATCATCCAGCAGTTT   3550
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3551 TCCTTCCACTCGGAGTTCCCAGGAAGCCACCTTGTCCCCTGCTGGGGTTC   3600
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3601 CCCCAGGGGTCCCTGCAGTTCCTGCACTATCGCCTTCCGCCTTGCTGGGA   3650
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3651 CTGAACGTATTGGAAATGTAGATCCGAAGCTTTCGCTTTTGCTAAAGAGA   3700
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3701 GAAAGGCAATCACAACTGGAGGTGGACCAAGATGCTGGGACACAGTGCTA   3750
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3751 CCGCATCTTCTCATATGAACCATTCAACAATCAGTACTGAGCACCATGAG   3800
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3801 CCAGCCAGGCACCTTGTCAGGTACTGGGAATCAGAAGTAGTAAGTCCCAG   3850
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3851 TCCCAGCCTTTTTTTTTTTTAGACATGGTCTCACTCTGTCACCCAGGCTG   3900
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3901 GAGTGCAGTGGCGCGATCTCAGCTCACTTGCAACCTCTGACTCCCAGGTT   3950
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               3951 CAAGCGATTCTCTTGCCTCAGTCTCCCGAGTAGCTGGGACTACAGGTGCG   4000
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4001 CACCACCATGCCCAGCTAATTTTTTGTGTTTTTAGTAAAGACGGTATTTC   4050
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4051 AACATGTTGGCCATGCTGGTCTCAAACTCCTGACCTCAGGTGATCTGCCC   4100
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4101 ACTTCGGCCTCCTAAAGTGCTGAGATTACAGGCATGAGCCACCGCACCCG   4150
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4151 GCCGGAACTCACCATTTTATGGGGAAAGAGATGCATCACCAACAATGCCA   4200
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4201 GCACAGTGGGACTGGTGCTATGGCATGACGGAGTAACACACAGCCAGTCT   4250
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4251 CTGGCTCACATCTTACATGAAACCCAAACACCCATCACGGCTCCAAAATA   4300
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4301 TCCTAGTCCCCTGGAAAGGCTTCACCACTCGGGACTGTTCTACATTATTA   4350
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4351 TTAAGAAAAGCTTCTCGGCTGGGTGCAGTGGCTCACGCCTGTAATCTCAG   4400
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4401 CACTTTGGGAGGCCGAGGCAGTCAGGAGTTCGAGACCAGCCTGGGTAACA   4450
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4451 TGGCGATACTAAAAATACAAAAATTAGCCGGGCGTGGTGACAGGCATCTG   4500
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4501 TAATCCTAGTTACTCGGGAGGCTGAGGCAAGAATTGCTTGAACCTGGGAT   4550
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4551 GCGAAGGTTGCAGTGAGCCGAGATCGCAACACTGCACTCCAGCTTAGGTG   4600
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4601 AAAGAGCGAGACTCCATCTCGGAAAAAAAAAAAAAGAAAGAAAACATTCT   4650
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4651 CTATGGATGGGGAAGGGGAAGGAGAAAGGAACTACCTTTATCCCCTAGTC   4700
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4701 TAGTGGTTTTCAAACTTTTGACCACCACCCATAAGATTTACATTTTCAAT   4750
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4751 TATGATCCAAGGTCTGCATATCTATTTATCAGAAACAAAAATGTCATGAA   4800
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4801 AGAATCCATTTACTACTATGTTAAGTACTACTGTGAAGTATTTTAAGATT   4850
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4851 TTCTACTGTCATATATTCATTTAAAACATACTGGCCCCAACACATTCAAC   4900
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4901 TGAGTTCGTACTCTACTAGTGGGCTGCATCCTGCATGTGAAAAACCCGGC   4950
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               4951 TCTAGCCCAACTTGCTTGGCCCCTGGAAAACAAGGGGGTGGAGGGCAAGG   5000
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5001 AAACCTGGGAAGGCTAGAGGTGGTCAGGGCCACACATACCGTCAGAGGCT   5050
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5051 TTTTGATGGCCTCCTGGATCTCCATCCGCTTGCGAGCAATGGTCTGGTCC   5100
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5101 AGCTTCCGCTCAAAAGCCAAGAGATCCATGTACGCCTGAGACTCTGGAAC   5150
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5151 AAGCTCCCGGATCTGAAGGAAGGTAGCAGAAGCTCATCAGCTTGCTTCAG   5200
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5201 CCAAAGCCTGGCTCTTTCCTCCCTTCCTGCTGCAGCCCAGCGTTGAGAGA   5250
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5251 GATGGACACCCACCCCAAGGTGGCCACTGGGCAGGCCTCCCAGGTGTCCT   5300
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5301 CTTAACACTTACTCGCTGAGGTAGAACCTTATCTGCCATCTTCCTCCTCT   5350
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5351 TTAACCTGGGGAGGACAGAAACCCACTTAAGAGGTCAATGGTCCAAAAAA   5400
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5401 GGACACTCACTCCCATAATGCCCCTCCAGTCTCCAGGACCCTCTCCCCCA   5450
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5451 GGAGAGCCTGGAGTCATCCTCAGTCACCAAAGCTCTTAAGATAGAAGGAA   5500
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5501 ACCCTCTGCTACCACCAGAGCTGAGTTAGGCAGAGTGAGAGAAGCAGGAT   5550
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5551 GCTCTTACCCCCGGCGCTGGGCAGGCATGGGAGGCTGCGCCTGGGGCACA   5600
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5601 AGCAGGCGTTTTCGGAATGGATCCATCATGGTGGGTGGCATGCCAGGTCG   5650
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5651 AAGCGGAGCTGCTGCACCAAATGGGGAGCCAGCAGGGGGTCCCACCTGCA   5700
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5701 AGCCAGCCATGGGCATCCGGTTCCCTGGTGACATGCCAGGTCGCTGGGGG   5750
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5751 AAGTGAGCCAATGGGGGTGCATAGGTCAGGGGCAAGGCCCTCCGGGACCC   5800
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5801 ATAGCCCATGCCCTCCATCCCTCTCGTCAGCCAGGTAGGGCCTGAGCAGC   5850
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5851 ACACCAGAGCCCTGTTGGAGCCCCAGGAACAAAGGGGAGTGGGCGCCTGA   5900
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5901 GCACAGAGTGTAAACCACACCTGCCCCGCCCCCTGCAACCGCCCTGGCAG   5950
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               5951 CCATGCCAGCGAATGAGGCCTGCCAGAACCTGGGCTGGGAGGAGGGTCCT   6000
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               6001 GCCTGCAGAGGGAAGGGCCTTGGGGAGCTTTTCAGGGCCCATTGCTACCT   6050
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               6051 TCCAGCCCCAGCATGCTGTGCCCTATTCCCTGGACAAGCTGGTCCCTATT   6100
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               6101 CTCTCAGACAGTCCTGCCAAGCCCTGCCCTCCTTCTCTTTCTCCCATCAT   6150
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               6151 GAAGAAGAAGCATGGCTGAGAGGCACAGGGGCAGTGTCACTGCCAGGCAG   6200
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               6201 AGGAGTGTACTATAGTATGAGTAGGCCAATGGCGCAGAGCCCCGATCCCC   6250
+                                                                       
+PNJ01291.1         0 --------------------------------------------------      0
+
+1               6251 ATCCTCTGTGGCCGAGGGAGAAAGGGGTCTGGTAGGCAGCAGCACCCCAA   6300
+                                        ||                          |||
+PNJ01291.1         1 -------------------GA--------------------------CAA      5
+
+1               6301 GTGAGCAGGGCTGCAACAGGATGGCTTGGAACGTGTACCAGCTGGTGGGG   6350
+                     | ||||                           |||||            
+PNJ01291.1         6 G-GAGC---------------------------TGTAC------------     15
+
+1               6351 GTGGCCTCGGGCAGGGTACAGGGACCCTGTACCCTGTAGTCTGGTATCAC   6400
+                                   ||.                |      ||        
+PNJ01291.1        16 --------------GGG----------------C------CT--------     21
+
+1               6401 ATAGCCCCCACCCA-CAGCCCAGAACTGGACCCTCCTCTTACCTCCCTAC   6449
+                        |     ||. | ||  ||.|.  |||                   |.
+PNJ01291.1        22 ---G-----ACA-ATCA--CCTGG--TGG-------------------AG     39
+
+1               6450 TGCCCAACTACTACCCCTATGACAGAAGACCCCAGAAGGGAAGCTATGGC   6499
+                     ||.          |.||   |   ||.|   ||          | |    
+PNJ01291.1        40 TGG----------CACC---G---GATG---CC----------C-A----     55
+
+1               6500 TCCTGGGTGGCCTGTGGGAAAGAGAGCAGCTAGCACCTGGACTCTGCCAG   6549
+                      ||.      ||.           ||.||  | ||    ||   ||.|  
+PNJ01291.1        56 -CCA------CCC-----------AGGAG--A-CA----GA---TGGC--     75
+
+1               6550 TGGTCCAGGCACCACCTGGCAGCCAGGACTGGCTCTGG--CTC--CGTGT   6595
+                        |.|   ||  |. |.  |..| ||.||||    .|  |||  |||..
+PNJ01291.1        76 ---TTC---CA--AG-TA--AAAC-GGCCTGG----AGACCTCAACGTCA    109
+
+1               6596 AGCCCTGGCAATCCCAAGCTGGAGAAGGGGGCTAAGATTATCCTGGGAGG   6645
+                     ||    .|| |  ||   ||.          |        |.||.  |.|
+PNJ01291.1       110 AG----TGC-A--CC---CTC----------C--------TGCTC--ATG    129
+
+1               6646 CAAGGATAGAGGCCCAGGCTGAGCAGCAGGAAAGTGGGAGACAGAAATAG   6695
+                     |. ||||. |.   |||.||   |. |    .|    | .||   || | 
+PNJ01291.1       130 CT-GGATC-AT---CAGCCT---CC-C----CA----G-TAC---AA-A-    156
+
+1               6696 CTTCTTTAGATGCCTGCAGAAGGATTTCCCACCTGAGGCCTTGCTCCCTG   6745
+                          |||||   |..|    .|| ||..||    |      |      |
+PNJ01291.1       157 -----TTAGA---CCCC----CGA-TTGGCA----A------G------G    177
+
+1               6746 ACATTTCTGTGGAGCCCATCTGGGAGTCACCTCCACCCCCACCCGCCTCC   6795
+                             .|   |     | .|| |              |   |     
+PNJ01291.1       178 --------CT---G-----C-TGG-G--------------A---G-----    187
+
+1               6796 CCATGGCTGCTGCCTGCAAGGCCTGTTTGGCAGCTCTGCCTTGCACACAC   6845
+                        | ||. |  .| || ||.|..|   |||.||..|  |.||    || 
+PNJ01291.1       188 ---T-GCA-C--AC-GC-AGACGAG---GGCCGCCAT--CATG----CA-    218
+
+1               6846 TGTCCCTGGCAGCTTCACAGGGCTGGCCCCAGGGCCCAGATTATGCAACG   6895
+                            |||. | |      | |        ||  |    | |.  || 
+PNJ01291.1       219 -------GGCC-C-T------G-T--------GG--C----T-TT--AC-    234
+
+1               6896 AGCACAACCAGCCAACCAAGCCCGGCAGGGTGGAGACTTGTACCAAATCA   6945
+                     |  .|||.||  ||||| |     ||    ||.||    |          
+PNJ01291.1       235 A--TCAAGCA--CAACC-A-----GC----TGCAG----G----------    256
+
+1               6946 AAGGACCCTCCCGCACCCCAGCATCATGGAGATGAGATTCTTCCCCAACC   6995
+                      |.|        |       ||| |   ||| .|.||.            
+PNJ01291.1       257 -ATG--------G-------GCA-C---GAG-CGGGAG------------    273
+
+1               6996 TCTTCATCCCGCACTAAAC-CCATGTTCCCAA-CACAGAGGGTCAGATTC   7043
+                       |.|||  | .|||..|  ||  ||| .| . | |     |.||||   
+PNJ01291.1       274 --TACAT--C-AACTGCA-ACC--GTT-AC-TTC-C-----GCCAGA---    304
+
+1               7044 TTGACCAGATGCGGAGATGGAAAGAAACATGACC--CA-C---AGACGTG   7087
+                      |   |.  | |  ||.|     |     ||.||  |. |   .  |   
+PNJ01291.1       305 -T---CT--T-C--AGTT-----G-----TGGCCGACTCCGTTT--C---    330
+
+1               7088 AGGATGGGGAGAGGAGGAGCAGGGTGGGAGGGAAGTGTTTGGGAGAATAA   7137
+                         |              |.                     ||||.|  
+PNJ01291.1       331 ----T--------------CC---------------------GAGATT--    339
+
+1               7138 AAAGCTCAAAGTGGGGGGCTCTGGGGCTTTGGGAGTCCTGCCAAAGTCTC   7187
+                         | |. |                   | |.||  |||.||..|    
+PNJ01291.1       340 ----C-CC-A-------------------T-GAAG--CTGGCAGGG----    357
+
+1               7188 TCTGCATCAGGAAGAGATTAATCAGAGCTGTTGAAAGACAAAAGACAGCC   7237
+                     | ||   |          |.  |  |      |. | .|  .||  | ||
+PNJ01291.1       358 T-TG---C----------TG--C--A------GC-A-TC--CAG--A-CC    376
+
+1               7238 TCTTTCTCTGCCTTAAAGATTGTTCTTTCTCTGGCCTGAGATTATAGAAA   7287
+                     .|.||.||.. |    | |               ||    ||. |     
+PNJ01291.1       377 CCATTGTCAT-C----A-A---------------CC----ATG-T-----    395
+
+1               7288 AAAACTAAGTGTGGCTACAGCTGTAAGCCCAGGCCCAGACATCCCAGACT   7337
+                       .| |.|  |||.|.||. |  |||  |.|   ||||| |..  |||| 
+PNJ01291.1       396 --CA-TTA--GTGTCGACC-C--TAA--CGA---CCAGA-AGA--AGAC-    428
+
+1               7338 AGTTTTTCCTAGTGCCTGAGACAAAGACAGGGAAGAACTGAAGCAGTGGG   7387
+                     ||     ||   ||. |           |. ||.  | |    |     |
+PNJ01291.1       429 AG-----CC---TGT-T-----------AC-GAC--A-T----C-----G    445
+
+1               7388 TCCTGCAGAGGTGAGCGAGGGCC-CTGTGGTCCCCAGGAAGCTCCCTGCT   7436
+                     .  ||..||||||..|||  .|| |||..| .|||   ||.     ||. 
+PNJ01291.1       446 A--TGTGGAGGTGGACGA--CCCACTGAAG-GCCC---AAA-----TGA-    481
+
+1               7437 GCAGTGTTCACAAAACCTGCAGCACTACCCATCCCTCCTGGGCAGGTGCT   7486
+                     |||.  ||..      |||  || ||  |.|  || .|    ||.     
+PNJ01291.1       482 GCAA--TTTT------CTG--GC-CT--CTA--CC-AC----CAA-----    506
+
+1               7487 CCGGTAACAGGAAGTCCCAAGACAAGGCCTCATAGGCAGGGTCTGGA---   7533
+                     .|   |.|| |.||     |. |   |||||     |     ||.||   
+PNJ01291.1       507 TC---AGCA-GGAG-----AT-C---GCCTC-----C-----CTTGATGT    533
+
+1               7534 ATAGGCTCCACCCAGACATCTGCTCCAGGTTTCCTGGGCCCAGAGCCCCT   7583
+                      ||.|        | .||||. ||. |.||.  .|.||   | |      
+PNJ01291.1       534 -TAAG--------A-TCATCA-CTG-ATGTG--ATTGG---A-A------    559
+
+1               7584 GGCTCACTCAGG-GCCCCAGGGGA--AGGCTGCTTATAGTTCAAGTCCCA   7630
+                       .|| ||.||| |.   ||. ||  | |||||       |    |    
+PNJ01291.1       560 --ATC-CTGAGGAGG---AGA-GACGA-GCTGC-------T----T----    586
+
+1               7631 GCTGAGCCTTGCCAAGCTCCATAGGGCTTATAGGCGCTAGCAACTCCTCC   7680
+                     .| .| ||.  || ||  ||      |   |  | |   |          
+PNJ01291.1       587 TC-TA-CCA--CC-AG--CC------C---T--G-G---G----------    604
+
+1               7681 CACTTCAAAAAACAAAACAAAACAAAACAAACAAAAAAAAAACAACTCAG   7730
+                                                               |  | |  
+PNJ01291.1       605 ------------------------------------------C--C-C--    607
+
+1               7731 GAGTTAAAGAAAAAAAAAAAAAGCAGTCCAGCACTCTGAGCCTCCCTAAC   7780
+                            ||          .|||||||  ||.   |  ||.  |.|   .
+PNJ01291.1       608 -------AG----------GAAGCAGT--AGG---C--AGG--CAC---A    628
+
+1               7781 TCCCTGCCTGCAGCAGGACCAGGTAGGCCTGGATCAATCCCCTGAACCCC   7830
+                     |  ||   |.      | |||   |      |           |.     
+PNJ01291.1       629 T--CT---TT------G-CCA---A------G-----------GT-----    641
+
+1               7831 AGATGAGGAATCCAGGGCTCCGGTGAGCATGCTTTGCCCTGCCCCAAATG   7880
+                      |.  | |    ||        |.||  |.||  .|    |      |  
+PNJ01291.1       642 -GC--A-G----CA--------GCGA--AGGC--AG----G------A--    659
+
+1               7881 TGGCCCTGATGCTCCTGGAAC-----CT-GG-----GCCTGAGGGCCTCA   7919
+                             |     |||||||     || ||     ||||||   |||.|
+PNJ01291.1       660 --------A-----CTGGAACAGGTGCTGGGAATTCGCCTGA---CCTAA    693
+
+1               7920 GTTGGGGAACATACCACCCACTCTCCCATGAGTAAAAAGGATTTTGAGGC   7969
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               7970 CGGGTGCAGTGTCTCACGCCCATAATCCCAGCACTTTGGGAGGCCGAGGC   8019
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8020 GGGTGGATCACAAGGTCAGGAGTTCAAGACCATCCTGGCCAAGATGGTGA   8069
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8070 AACCTCGTCTCTACTAAAAATACAAAAAAATTAGCCGGGCGTGGTGGTGG   8119
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8120 GCACCTGTAATCCCAGCTACTCAGGAGGCTGAGGCAGAGGATTGTTTGAA   8169
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8170 CCTGGGAGGCGGAGGTTGCAGTGAGCTGAGATCATGTCACTGCACTCCAG   8219
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8220 CCTGGGCGACAGAGTGAGACTCCGTATCAGAAAAAAAAAAATTTTTTTTT   8269
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8270 GAACTTTTTGAACTCTCTGGAGTGAACCCAGCAATCTGAGGTTTTTGTTA   8319
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8320 TTTTGTTGCCCAGGCTGGAGTGCAGTGGCAGGATCATAGCTCAATGCAGC   8369
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8370 CTTGAACTCCTGGACTCAAGCAATCCTCCTGCCACAGCATCCTGAGTAGC   8419
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8420 TGGGACCATAAGCGCACACCACCGCGCTTGGCTAAATTTTTTTTTTTTTT   8469
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8470 TTTTTAAGAGATGATGGTCTCACTATGTTGCTTAGGCTGGTCTTGAACTC   8519
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8520 CTGGTCTCAAGTAATCCTGTCTGGGCCTCCCAAAGTGCTAGGATTACAGG   8569
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8570 TGTGAGCCCACCACATCCTGCCCTGGAGGTCTTTTTCTTTTCTTTTTCTT   8619
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8620 TTTTTAGGTTCCTCTGTTAACTGTGATCCACAGCTAGAACCACCCTCTGG   8669
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8670 AGGAAGGGAGGTCATCACTTCCCTTCTTTCAACTATTTGCTCAGCTTGGG   8719
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8720 CCTCAAATTCTCGCTTTTCAAGTGCATCTCATGAGCCCTAACAGACAGGA   8769
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8770 ACCCCTTTGTTTCCCAGATCTCAAGTCCCTTCTCCTGGCAGTCATACAAC   8819
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8820 TGGACTTGGAAAGAAGGCAAGTAGGATCCTCTTCAAACTCAGCCAAAGTT   8869
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8870 AGCTGGCTGGGTTCTCCTTCCCATCTACCTCTCCTGCCAGGAGGAGGAAA   8919
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8920 GCTAGTGGGATGGGAAACCCAGACTCAGGGCCATCTCCTACTTCCGCACA   8969
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               8970 GCTAGCAGCCCAGGCCTAACCAGCCAGCCAGCTTGGCCTTGCCACAGGCC   9019
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9020 CAAGGCCACCCCCCACCAAAACATGTGGAATCCATCCTCTCAGGGGCTGT   9069
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9070 CCCAAGGGCACATTTCCTATGGCTTGCATGCCAAGGAAACTGGAGCGGCT   9119
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9120 TGTCTGTTCCAGGTCCTTCCAAGGCCAAAGGCCCACAGATGGTGCCCAGG   9169
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9170 CCAGGTCTCAGTGGGCAGGCCCAAGGGCTACAATGAATGATGCAGGGAGC   9219
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9220 CCTCAGCAACACCCTGGGCCCATGAATCCCCAAGGGGGACAGCAAGGTGG   9269
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9270 GAGAGATGAGCCCCAGCTGGAATCCCTGGGACCAGGTCTGTCTCTGCCCA   9319
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9320 TACCCAGACTCTGTTTTCTCTTGAGAAAGGAGGAAGAATGAGGAGTAAGA   9369
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9370 AGGAAAAAAAAATCCAGTCACTGTCCCTAGTTAAGCCATCTCCTTAGAAG   9419
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9420 TGAGGGCCCAGTGGGGCAGGTAGGCTGTGTATACTCCACGAGGATCCCTA   9469
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9470 AGGACCTCTGCCTGGAAACATGAGTCGAAAACAGAGGAAGCCCACAGCAA   9519
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9520 ACCCGTAGATGAGCAAGAAGCCAGTGTCAAATGCTTGGGCACATGGCTTC   9569
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9570 GGACGTGGTGGAGTTAGAACCTGAAGGCCAAATAAAAATGCAGAGAGGGT   9619
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9620 GACAAGGCAGATGGGCACAGTTTCCAAGCCCTCTGGGGCAACCTGAACAG   9669
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9670 CATACTAGAGCACTGGCAGGGTCAGGCTGAGGTCCTCACACACTGAGCAG   9719
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9720 AAGTCGCTGCTTTGCAAGGGCTTTTGAAGCTGCAATCTGAGCAGCTCTCA   9769
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9770 AAACCCCAAAGGGGTCAGGACAGCACTCTTTGAAGCAACTCTCGCAGACT   9819
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9820 CCTCCGGCCCCAGACCAGCAGGGCTCCACTCTGCACGTCCAGACTAATCA   9869
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9870 ACTCCCGGACACGATGACAGGAGGCAGAAAGCTCAGAAGAGAGCCGGCCA   9919
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9920 GTGACTGGGCTGGGCCTCCCCTCAGGCCTGGCCACCACCGTCTCTGGTCT   9969
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1               9970 AAGCTGAAGTCCTCCCAGCGAAGGCGCCTGGCCCTGCCTCAGGAGTAAAG  10019
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10020 TCCGCCCGTGCACAAGCTGGAATCCCCTGGCCCTAGCCTCAGCGTCCCGT  10069
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10070 GCCCGTAGGAAGCCAGGCTCCTTCCTCCTCATTAGCAGCCGGGAGCCATC  10119
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10120 TCAGACACACTAGAGCTCCGCCAGTTCCCAACCAGAAAAAACAGGGCAGA  10169
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10170 CTTGAACTGGGACCAAGGCCGATGCAGGGTAACCCCGGTTTCTCAGCGAG  10219
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10220 GGCCCTTTCCCAAACTTTCTCATCACTTTCCAGCCCTCCTACCCTAGACT  10269
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10270 TCTCAACCCACCCGCCACAATTCACTGGCTCCCCAAACTCCTCCATCTCC  10319
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10320 CAGTCACTCGGAATCCCTGTGCCGCGGAAGCCCCCAGGCCTCCCAGCTGC  10369
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10370 TTCCAGCCCTCCGCTGCAGAACCTGCTTCCCCTTCCCACTTCTCCACCGC  10419
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10420 GACCCGCCGCAGCCCGAGGGTCCCGGCCCGCCCTCCACCGTCTCCCGGAG  10469
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10470 TTCCTCATGCATTCCCCAGGGCCCTCACTCGAGGCCCCTTCAGCCGCCGG  10519
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10520 CCCGGGCGCCCTCGCAGCGCCGCTCGCCCCCGTCCGCTCGCGTCCTCCTT  10569
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10570 GCTCACCTGGTACTGCGCCGCGGGGCCCGCGGGGCCCATGGGGCGGAAGG  10619
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10620 CGGCGGCCCCGGGGCCCCCCACGCCTCCTGCCGGACCCGGTCCCCGGAGC  10669
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10670 GCCGGTCCGGGCAGCATGCCGGGTCCCGCGGGGGGAGGCGGCGCTACCAG  10719
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10720 GGCCGCGGCCACGGCGCCGCCGCCAGGGCTTAGCGGGGGCAGCGGGAACC  10769
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10770 CGCCCGCGCCTCGGCCCGACATCGCTCCGTCCCGTCCCGCGGTGCCGCGA  10819
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10820 TCCGGACTCCGGGCTCCGCGTCGAGTCCACTCCGTGCTCTGTGCTCCGCG  10869
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10870 ATCCGGGACTTGGCGATCTTAATTCCGGGTTCCGGGATTTGTCGATCCGG  10919
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10920 GCTCCGGGATTTGCTAATCCAAGTTCGCGAGTTCCTCACAGACCCGGTTC  10969
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              10970 GGGACAGATTCCGCTCCTGCCCGGGAGATTCCGGATCCAGGATCTGCTGC  11019
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              11020 GGGCCCGCCTTCCGTCCCCGGCCTCCGGAGGTTTGGCCGCCCGAGTCGAG  11069
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              11070 TTACCCAGAGGCGGCTACGAACTCCCTGCCCCGCCCAACCCAGCCCAGCA  11119
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              11120 CTAGGCCCCGCCTCTACCTGGTGCCCAATGCTCGAGTGCCTCCTCGAATC  11169
+                                                                       
+PNJ01291.1       693 --------------------------------------------------    693
+
+1              11170 CTGCCCCTCGCGAGACCCGCCCCCAGCGGGCA  11201
+                                                     
+PNJ01291.1       693 --------------------------------    693
+
+
+#---------------------------------------
+#---------------------------------------

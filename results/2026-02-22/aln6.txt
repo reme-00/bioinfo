@@ -1,0 +1,919 @@
+########################################
+# Program: needle
+# Rundate: Sun 22 Feb 2026 21:53:57
+# Commandline: needle
+#    -asequence HumanChr17.fa
+#    -bsequence HumanSMARCD2.fa
+#    -gapopen 1.0
+#    -gapextend 0.1
+#    -auto
+#    -outfile aln6.txt
+# Align_format: srspair
+# Report_file: aln6.txt
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: 1
+# 2: AAI36323.1
+# Matrix: EDNAFULL
+# Gap_penalty: 1.0
+# Extend_penalty: 0.1
+#
+# Length: 11006
+# Identity:    1480/11006 (13.4%)
+# Similarity:  1480/11006 (13.4%)
+# Gaps:        9526/11006 (86.6%)
+# Score: 6417.458
+# 
+#
+#=======================================
+
+1                  1 AAAGCTCTGTGGGCCAAGTCCTCTAGGACTCCAGTCTGTTAATGAGGGCT     50
+                                                                       
+AAI36323.1         0 --------------------------------------------------      0
+
+1                 51 GTGCTGTTCAAGGACCAGGTCCAGGCACCACCAATAGACAAAAGGATTTA    100
+                                                                       
+AAI36323.1         0 --------------------------------------------------      0
+
+1                101 TTTGGAAATTTCCAAACCTGCCAGATGTGGCACTCGCCAAGCCCTAGGCC    150
+                                                                       
+AAI36323.1         0 --------------------------------------------------      0
+
+1                151 CACCCTCCTCACCAAGCTCCAAAGGGCAACACCAGTCCTCCCAGCCTCCC    200
+                                                                       
+AAI36323.1         0 --------------------------------------------------      0
+
+1                201 CATTCACCTTACCCTGGCCTCCACATGCACATACCCCATACCTCAGGCCA    250
+                                                                       
+AAI36323.1         0 --------------------------------------------------      0
+
+1                251 TGCTAGAGAACTGGAGTGTCCCCTCCCCGGCCCAAGCCGCTGGAGAGGCA    300
+                                                                      |
+AAI36323.1         1 -------------------------------------------------A      1
+
+1                301 GCCCTCTGGCATCCCAGGAGATGATGGCGGCCAGAGCCGCTTGCATAGAT    350
+                           ||   ||   |           |||| |||  ||  ||      
+AAI36323.1         2 ------TG---TC---G-----------GGCC-GAG--GC--GC------     17
+
+1                351 TGAGGAAAGAAAAGAAGGAGGCACCTAACAGGCTCCCTGAAAACCCCCAA    400
+                                      | ||       | ||      |           
+AAI36323.1        18 -----------------G-GG-------C-GG------G-----------     24
+
+1                401 CTTACCCCTGTACAAAAAAAGTGGCTCCCACATAGAAAACTTGCTCCCAA    450
+                      ||   ||    |          |      | | |    |   | |||  
+AAI36323.1        25 -TT---CC----C----------G------C-T-G----C---C-CCC--     38
+
+1                451 AATAGTGCAAATACCCAAAGGAAAGGAAAAAACCAGCAGCAAGGCTGGGC    500
+                           ||   |                   |  |||  |    || |||
+AAI36323.1        39 ------GC---T-------------------A--AGC--C----CT-GGC     51
+
+1                501 TTGTAGGAATGGCAAAGAACTTTGGTTTAGAAAGGCTAGGAAGAGTCTGG    550
+                                |    |  |             |||        | |   
+AAI36323.1        52 -----------G----G--C-------------GGC--------G-C---     59
+
+1                551 GCTGCACCTCCTCTTCCTAGCCCAGCTCCCCA-GAGCCAGCTCTGACCCT    599
+                      | |      | | |  |   || |  |||||   |   |    | ||| 
+AAI36323.1        60 -C-G------C-C-T--T---CC-G--CCCCAT--G---G----G-CCC-     80
+
+1                600 CGCCCCAGGGGGAGTCTGTAAACATGCAAACCCAGCAGCCTTTGGTTCGG    649
+                     ||   |       |   |       |    |||  | | |   ||  |  
+AAI36323.1        81 CG---C-------G---G-------G----CCC--C-G-C---GG--C--     95
+
+1                650 AAATGTCTTACAATGTCAAAGCACAGCCTCCAGCAGTCCTACTTGGGCCT    699
+                         |     | | ||        |    ||||| |    |         
+AAI36323.1        96 ----G-----C-A-GT--------A----CCAGC-G----A---------    108
+
+1                700 GCCTGCAGGGGGGCAGAGGAGGCATCTGCTGAACCCAATTAAAGCCAATG    749
+                      |||                ||||  || |     | |       |    
+AAI36323.1       109 -CCT----------------GGCA--TG-T-----C-A-------C----    121
+
+1                750 CAAAAAGTATAAGGCTTTGGGGACCAAGCAACAAGGAATCCTAT-CACTA    798
+                     |          |       |||   || |  |  ||      || | |  
+AAI36323.1       122 C----------A-------GGG---AA-C--C--GG------ATGC-C--    137
+
+1                799 CATTTATAAGACTAAAGCTGGAGAGTAGAGGGTGACAGCAGACACTCCTC    848
+                     |    ||  |      ||              |    |  |   ||  | 
+AAI36323.1       138 C----AT--G------GC--------------T----G--G---CT--T-    149
+
+1                849 ACCCCAGCCTACGTGTCTGCGGCCCCAGCAAGGACCCAGAGGGTGGTCTC    898
+                           | | | | |  |         |   |||  |          | |
+AAI36323.1       150 ------G-C-A-G-G--T---------G---GGA--C----------C-C    162
+
+1                899 CCTCCAGGCTCCAGGGCTGGGAAGAAAGATCCCTGAGCAGTTAGGTCAGG    948
+                     |||    |||    |||            ||||    || ||   |   |
+AAI36323.1       163 CCT----GCT----GGC------------TCCC----CA-TT---T---G    181
+
+1                949 CGAATTCCCAGCACCTGTTCCAGTTCCTGCCTTCGCTGCTGCACCTGGAG    998
+                      |   |    |||   |   |||   ||  |  ||||  |    |     
+AAI36323.1       182 -G---T----GCA---G---CAG---CT--C--CGCT--T----C-----    199
+
+1                999 AAGGGAGAAACCAAGTGGCTCAGGCCTTTGCTACTCACGGCCAAAGGAGG   1048
+                           |  | |      ||   |     || | |               
+AAI36323.1       200 ------G--A-C------CT---G-----GC-A-T---------------    209
+
+1               1049 GAAAACAGGGCAGAGCCTCACCTTGGCAAAGATGTGCCTGCCTACTGCTT   1098
+                                   |      |    |    |     |  || |      
+AAI36323.1       210 --------------G------C----C----A-----C--CC-A------    217
+
+1               1099 CCTGGGCCCAGGGCTGGTGGTAGAAAGCAGCTCGTCTCTCCTCCTCAGGA   1148
+                            |||          |     | |               |  || 
+AAI36323.1       218 -------CCA----------T-----G-A---------------T--GG-    226
+
+1               1149 TTTCCAATCACATCAGTGATGATCTGCAAAGAGCCAGGAGGAAAGCCATA   1198
+                           ||  |  |       || |                    ||   
+AAI36323.1       227 ------AT--C--C-------AT-T--------------------CC---    235
+
+1               1199 GCATAATCCCCACCCCTGGGCTAATCCACCCTGGGAACTGCTGTGGGTAA   1248
+                     | | ||     |   |   |         |||  |  ||  |||  |   
+AAI36323.1       236 G-A-AA-----A---C---G---------CCT--G--CT--TGT--G---    252
+
+1               1249 AAATCACCCAGAGCTTTACATAGGAGTCCCCTCGGGAAAGAGGACTACAC   1298
+                            ||    |    |  | | |      |         |       
+AAI36323.1       253 -------CC----C----C--A-G-G------C---------G-------    261
+
+1               1299 CTTGAGGTCTCGGCGCTGGGAACGGAGCCATTCCTGGATGAAGTCCTGGG   1348
+                     |   |       || ||           |   ||   ||   |  |    
+AAI36323.1       262 C---A-------GC-CT-----------C---CC---AT---G--C----    274
+
+1               1349 GGTCGGTGCTAAAACTGAGCATGAAATCTCTCTGGGTCTTCAGCTGGTTG   1398
+                        |  |||     |    || |        |   |    |  |      
+AAI36323.1       275 ---C--TGC-----C----CA-G--------C---G----C--C------    286
+
+1               1399 ATGGACTCAATGGTCTCATGGATCTGGAGAGGGTACCTGTGTCAGACTGT   1448
+                        |       ||      || | |    |    |        |||  | 
+AAI36323.1       287 ---G-------GG------GG-T-T----A----A--------AGA--G-    299
+
+1               1449 GCCCCCAAAGCTTACATGCAAGCAACTGAGCCAGAGTTCCCATCCCGTCC   1498
+                     |       ||       | |||  | || | ||||  |   |        
+AAI36323.1       300 G-------AG-------G-AAG--A-TG-G-CAGA--T---A--------    316
+
+1               1499 TCCAGGTGCTACATGTATGGAAATGCTGGACAGAGCCAGCCCACCCCAAT   1548
+                        |   |      |  |     | ||                     | 
+AAI36323.1       317 ---A---G------G--T-----T-CT---------------------A-    324
+
+1               1549 CCTGGGCCCCAGAGGAAGCTGTGGAGCCAGAGGGCCCACCTTGACATCAA   1598
+                     |||               |     || | ||      |   |  |  |  
+AAI36323.1       325 CCT---------------C-----AG-C-GA------A---T--C--C--    337
+
+1               1599 GGGAGGCGATCTCCTGCTGATTGGTGGTAGAGGCCAGAAAATTGCTCATT   1648
+                         || ||      ||   || ||  |     ||||   |  |      
+AAI36323.1       338 ----GG-GA------GC---TT-GT--T-----CCAG---A--G------    354
+
+1               1649 TGGGCCTTCAGTGGGTCGTCCACCTCCACATCGATGTCGTAACAGGCTGT   1698
+                     |    | |||   || ||      |    | | |||  |    |     |
+AAI36323.1       355 T----C-TCA---GG-CG------T----A-C-ATG--G----A-----T    372
+
+1               1699 CTTCTTCTGGTCGTTAGGGTCGACACTGCAGGCAGCACATGGGGAGGGAA   1748
+                     | || | ||| | ||    |      |    | ||  |        ||||
+AAI36323.1       373 C-TC-T-TGG-C-TT----T------T----G-AG--C--------GGAA    392
+
+1               1749 GGCACATAGCTGACTTCATCCTGCCCACCTGGGCCAAATCTGGGGCCCAT   1798
+                      |  | | |  |||  ||    |   |      ||  || |   |     
+AAI36323.1       393 -G--C-T-G--GAC--CA----G---A------CC--AT-T---G-----    409
+
+1               1799 TCTCTGCACACACTCAGGGAAAAAGAAACC-TGATGCTTTCTTTGGCTTT   1847
+                      ||| |        |       |||    |  ||               |
+AAI36323.1       410 -CTC-G--------C-------AAG----CG-GA---------------T    422
+
+1               1848 AGTTCAAGCCAAGGGTGAATCTGCTCTTAGAAGAGCCTTCCTGTCCCCCT   1897
+                      |     |   |    | |  | | |  ||  ||        |       
+AAI36323.1       423 -G-----G---A----G-A--T-C-C--AG--GA--------G-------    435
+
+1               1898 CCTTGCATTTACCTAATGACATGGTTGATGACAATGGGGTCTGGATGCTG   1947
+                         |      ||  ||  ||      |  | ||    | |      || 
+AAI36323.1       436 ----G------CC--AT--CA------A--A-AA----G-C------CT-    450
+
+1               1948 CAGCAACCCTGCCAGCTTCATGGGAATCTCGGAGAAACGGAGTCGGCCAC   1997
+                             |||  |    |      |   |    |||   || | |    
+AAI36323.1       451 --------CTG--A----C------A---C----AAA---AG-C-G----    464
+
+1               1998 AACTGAAGATCTGGAGGAAATACGAAAGGCTCAGCGTTGGCTTGTGGGCA   2047
+                      |   |||  ||        | |    ||   |    |  |   |    |
+AAI36323.1       465 -A---AAG--CT--------T-C----GG---A----T--C---T----A    479
+
+1               2048 CAGTGGAGTGGACCATTCCAGGACCAGTGAGGGCAGCAGTCTGCAGGCTG   2097
+                     |     | |      ||       |        ||  |   |  |  | |
+AAI36323.1       480 C-----A-T------TT-------C--------CA--A---T--A--C-G    492
+
+1               2098 TGGCCAAGGAGTAGCCCAGCAGGCAAGGCAAAGCAAGGGCTGAGAAAACG   2147
+                     |          |                           |       |  
+AAI36323.1       493 T----------T---------------------------C-------A--    496
+
+1               2148 GGGGCTGGCATCTGGCTAACCTGGCGGAAGTAACGGTTGCAGTTGATGTA   2197
+                        | |  |  |   |  |    ||      ||  |  || |  ||   |
+AAI36323.1       497 ---G-T--C--C---C--A----GC------AA--G--GC-G--GA---A    513
+
+1               2198 CTCCCGCTCGTGCCCATCCTGCAGCTGGTTGTGCTTGATGTAAAGCCACA   2247
+                              | |      | | |            | | ||   |   ||
+AAI36323.1       514 ---------G-G------C-G-A------------T-A-GT---G---CA    525
+
+1               2248 GGGCCTGCATGATGGCGGCCCTCGTCTGCGTGTGCACTCCCAGCAGCCTT   2297
+                       |   | |  |                |   ||      |||  |    
+AAI36323.1       526 --G---G-A--A----------------C---TG------CAG--G----    536
+
+1               2298 GCCAATCGGGGGTCCAATTTGTACTGGGGAGGCTGGAGTTGGATGGAGGG   2347
+                     |   |        ||        |        |          |    ||
+AAI36323.1       537 G---A--------CC--------C--------C----------T----GG    545
+
+1               2348 GAGTCAGAACGGGTTCTTATAGTAGAACAGTGGGAAAATAGGGCAGGGAC   2397
+                     | |   ||||     |           |               ||  | |
+AAI36323.1       546 G-G---GAAC-----C-----------C---------------CA--G-C    557
+
+1               2398 AGGAAGGGTTTCTAGGAACCAGCTCCCCTCCTGAGGGGTCCCTGTGGGCC   2447
+                         | ||      || | ||            |             |  
+AAI36323.1       558 ----A-GG------GG-A-CA------------A-------------G--    567
+
+1               2448 CAGAAATGACCCCAGGGTCTCTGTCACCTGATGATCCAGCATGAGCAGGA   2497
+                       |   |        ||   || |  ||||  |     | |  | |    
+AAI36323.1       568 --G---T--------GG---CT-T--CCTG--G-----G-A--A-C----    583
+
+1               2498 GGGTGCACTTGACGTTGAGGTCTCCAGGCCGTTTTACTTGGAAGCCATCT   2547
+                        | | |  || | |  ||     |         |   ||||   |   
+AAI36323.1       584 ---T-C-C--GA-G-T--GG-----A---------A---GGAA---A---    599
+
+1               2548 GTCTCCTGGGTGGTGGGCATCCGGTGCCACTGGCAGGGAGGGAAGCATGG   2597
+                                       |  |  ||   ||          |  | || |
+AAI36323.1       600 ------------------A--C--TG---CT----------G--G-AT-G    610
+
+1               2598 CTTATCACCAAGGGGGTGGGCGTGAACACAGGGCCTCCCAAGGGCCCTGA   2647
+                        ||   |           | |      |  |     | |        |
+AAI36323.1       611 ---AT---C-----------C-T------A--G-----C-A--------A    620
+
+1               2648 GGCCATTTCCCTGCCAAACCTGCACATCAGCCTGCTTTTGCCCCAGGCCC   2697
+                         |         |  |   |   |  |          |    |||   
+AAI36323.1       621 ----A---------C--A---G---A--A----------G----AGG---    630
+
+1               2698 ACTCTCACCTCCACCAGGTGATTGTCAGGCCCGTACAGCTCCTTGTCCAG   2747
+                                 |  |   |  | |        |     | |   |    
+AAI36323.1       631 ------------A--A---G--T-T--------T-----T-C---T----    639
+
+1               2748 CTCAATGACGAGGCTCTTAAAGAATGAAGAAAACTTCCTCTTCTGTTTGC   2797
+                      || ||        ||||      |      ||               | 
+AAI36323.1       640 -TC-AT--------TCTT------T------AA---------------G-    651
+
+1               2798 TAGGCTGGGGATGGAAAGGGGTGTGAGATGGTGCTGCTGAGCTCTCAAAT   2847
+                      | ||                            || |   |   ||  ||
+AAI36323.1       652 -A-GC----------------------------CT-C---G---TC--AT    662
+
+1               2848 CTCAAGCTATGCTAAATCCCAAGAAAGAGAAGCCCCATTTCAGCCCTGGA   2897
+                      |   |  | ||    |         | | |    ||    |     |||
+AAI36323.1       663 -T---G--A-GC----T---------G-G-A----CA----A-----GGA    677
+
+1               2898 GCTCCGGATACTGAAGATTCCTGGGCCCTGAAGGATGGAAGCAGGACTCT   2947
+                     |||   |    |    |   | ||| ||       | | | ||  |   |
+AAI36323.1       678 GCT---G----T----A---C-GGG-CC-------T-G-A-CA--A---T    696
+
+1               2948 GGGCAGACTGGAGGCAGGGAAATGGTGCCCTCTTGCAGCCCACGAGGGAC   2997
+                        |  ||      |       | | |      |             |  
+AAI36323.1       697 ---C--AC------C-------T-G-G------T-------------G--    705
+
+1               2998 TTCCTCGAGACACTCGACTGCCATCTGCAGGAACACTGTAATAACCACAC   3047
+                           |||    | |   | || |  | ||   | ||            
+AAI36323.1       706 ------GAG----T-G---G-CA-C--C-GG---A-TG------------    720
+
+1               3048 AAATCAACCTCCAACGGGCTTGGAGCAGCGCCCCCCTCCCTATGGCAGGA   3097
+                             | || |    |      ||           ||     |||||
+AAI36323.1       721 --------C-CC-A----C------CA-----------CC-----CAGGA    734
+
+1               3098 CTTCTCTGGGAGCGCCCAAGTGTCTGGCCCAGTCTTTTTTTTTCTGAGAC   3147
+                              ||     | |       |   |             || |  
+AAI36323.1       735 ---------GA-----C-A-------G---A-------------TG-G--    743
+
+1               3148 ACAATCTCACTCTGTCACCCAGGCTGAAGTGCAGTGGTGTGATCATAACT   3197
+                                || |    |   |   |    |       | | | ||  
+AAI36323.1       744 -----------CT-T----C---C---A----A-------G-T-A-AA--    755
+
+1               3198 CACTGAAGCTCGACCTCCTGGGCTCAAGCCATCCTCCTGCATCAGCCTTA   3247
+                      ||    |   |    ||| ||    ||  |    ||| ||  |  |   
+AAI36323.1       756 -AC----G---G----CCT-GG----AG--A----CCT-CA--A--C---    774
+
+1               3248 TGAGTAGCTGGGACTACAGGTGCATGCCACCGCACCCAGCTAATTTTTAA   3297
+                           | |    | | |   |  |      |    || |          
+AAI36323.1       775 ------G-T----C-A-A---G--T------G----CA-C----------    785
+
+1               3298 ATTTTTTGTAGAGATGGGGTCTGGCTCTGCTGCTCAGGCTAGTATCAAAC   3347
+                                         |   |||  |||||||   | |        
+AAI36323.1       786 --------------------C---CTC--CTGCTCA---T-G--------    798
+
+1               3348 TCCTTGG-TCTCAGTCTTAAACCCACACAGGCCTCCTTCCCTCCAGAACC   3396
+                       | |||   |||    |         || |   || | || ||||    
+AAI36323.1       799 --C-TGGA--TCA----T---------CA-G---CC-T-CC-CCAG----    819
+
+1               3397 TCCCTCCCCAACTCACATCATCCAGCAGTTTTCCTTCCACTCGGAGTTCC   3446
+                                         |  | ||           |     | ||  
+AAI36323.1       820 --------------------T--A-CA-----------A-----A-TT--    827
+
+1               3447 CAGGAAGCCACCTTGTCCCCTGCTGGGGTTCCCCCAGGGGTCCCTGCAGT   3496
+                        |  |  |      ||||  |    |       |    |   |   | 
+AAI36323.1       828 ---G--G--A------CCCC--C----G-------A----T---T---G-    840
+
+1               3497 TCCTGCACTATCGCCTTCCGCCTTGCTGGGACTGAACGTATTGGAAATGT   3546
+                         |||  |                  || |||  |          || 
+AAI36323.1       841 ----GCA--A------------------GG-CTG--C----------TG-    852
+
+1               3547 AGATCCGAAGCTTTCGCTTTTGCTAAAGAGAGAAAGGCAATCACAACTGG   3596
+                      |    | |            | |            |    ||| ||   
+AAI36323.1       853 -G----G-A------------G-T------------G----CAC-AC---    863
+
+1               3597 AGGTGGACCAAGATGCTGGGACACAGTGCTACCGCATCTTCTCATATGAA   3646
+                          |  | |||  |   |    || |     |      | |    |  
+AAI36323.1       864 -----G--C-AGA--C---G----AG-G-----G------C-C----G--    877
+
+1               3647 CCATTCAACAATCAGTACTGAGCACCATGAGCCAGCCAGGCACCTTGTCA   3696
+                             |   |   | |      |||      | ||||| || |||  
+AAI36323.1       878 --------C---C---A-T------CAT------G-CAGGC-CC-TGT--    895
+
+1               3697 GGTACTGGGAATCAGAAGTAGTAAGTCCCAGTCCCAGCCTTTTTTTTTTT   3746
+                     ||  |      |      |  | |    || |      |           
+AAI36323.1       896 GG--C------T------T--T-A----CA-T------C-----------    906
+
+1               3747 TAGACATGGTCTCACTCTGTCACCCAGGCTGGAGTGCAGTGGCGCGATCT   3796
+                        | |  |   ||      ||   |  |       ||       |  ||
+AAI36323.1       907 ---A-A--G---CA------CA---A--C-------CA-------G--CT    920
+
+1               3797 CAGCTCACTTGCAACCTCTGACTCCCAGGTTCAAGCGATTCTCTTGCCTC   3846
+                       |  ||   |        |      |   |   | |        |   |
+AAI36323.1       921 --G--CA---G--------G------A---T---G-G--------G---C    931
+
+1               3847 AGTCTCCCATGTAGCTGGGAC-TACAGGTGCGCACCACCATGCCCAGCTA   3895
+                     |      |  | ||| ||||  ||||  |   ||  | | |     ||  
+AAI36323.1       932 A------C--G-AGC-GGGA-GTACA--T---CA--A-C-T-----GC--    954
+
+1               3896 ATTTTTTGTGTTTTTGTAAAGATGGTATTTCAACATGTTGGCCATGCTGG   3945
+                                          |    |   |  |  |||    |      
+AAI36323.1       955 ---------------------A----A---C--C--GTT----A------    962
+
+1               3946 TCTCAAACTCCTGACCTCAGGTGATCTGCCCACTTCGGCCTCCTAAAGTG   3995
+                      ||     ||| |  | |     |   |   |        | ||    | 
+AAI36323.1       963 -CT-----TCC-G--C-C-----A---G---A--------T-CT----T-    977
+
+1               3996 CTGAGATTACAGGTGTGAGCCACCGCACCTGGCCGGAACTCACCATTTTA   4045
+                     |  ||  |     |||| |   ||| | ||  || |              
+AAI36323.1       978 C--AG--T-----TGTG-G---CCG-A-CT--CC-G--------------    995
+
+1               4046 TGGGGAAAGAGATGCATCACCAACAATGCCAGCACAGTGGGACTGGTGCT   4095
+                     |           |   |      |  | || |   |    || |  | | 
+AAI36323.1       996 T-----------T---T------C--T-CC-G---A----GA-T--T-C-   1009
+
+1               4096 ACGGCATGATGGAGTAACACGCAGCCAGTCTCTGGCTCACATCTTACATG   4145
+                      |  |       | |     | |   ||   ||||           || |
+AAI36323.1      1010 -C--C-------A-T-----G-A---AG---CTGG-----------CA-G   1024
+
+1               4146 AAACCCAAACACCCATCACGGCTCCAAAATATCCTAGTCCCCTGGAAAGG   4195
+                                        ||          |  | |    ||      |
+AAI36323.1      1025 -------------------GG----------T--T-G----CT------G   1032
+
+1               4196 CTTCACCACTCGGGACTGTTCTACATTATTATTAAGAAAAGCTTCTCGGC   4245
+                               |   |  |     |               |     |   |
+AAI36323.1      1033 ----------C---A--G-----C---------------A-----T---C   1039
+
+1               4246 TGGGTGCAGTGGCTCACGCCTGTAATCTCAGCACTTTGGGAGGCCGAGGC   4295
+                           ||   |   |   |      | |  ||  ||             
+AAI36323.1      1040 ------CA---G---A---C------C-C--CA--TT-------------   1050
+
+1               4296 AGTCAGGAGTTCGAGACCAGCCTGGGTAACATGGCGATACTAAAAATACA   4345
+                      |||   |  ||   |  |  |       |||   |          | | 
+AAI36323.1      1051 -GTC---A--TC---A--A--C-------CAT---G----------T-C-   1065
+
+1               4346 AAAATTAGCCGGGCGTGGTGACAGGCATCTGTAATCCTAGTTACTCGGGA   4395
+                           |        |  |   | |    ||   | |  |  || |    
+AAI36323.1      1066 ------A--------T--T---A-G----TG---T-C--G--AC-C----   1078
+
+1               4396 GGCTGAGGCAAGAAGAATTACTTGAACCTGGGATGCGAAGGTTGCAGTGA   4445
+                       ||            |  ||  | | |       |  |    | |   |
+AAI36323.1      1079 --CT------------A--AC--G-A-C-------C--A----G-A---A   1091
+
+1               4446 GCCGAGATCGCAACACTGCACTCCAGCTTAGGTGAAAGAGCGAGACTCCA   4495
+                        || |  |  |||  || ||   |  |   |     | |  ||   ||
+AAI36323.1      1092 ---GA-A--G--ACA--GC-CT---G--T---T-----A-C--GA---CA   1111
+
+1               4496 TCTCAGAAAAAAAAAAAAAAAAAAAAAAGAAAATTTCTCTATGGATGGGG   4545
+                       ||                        |           || | |    
+AAI36323.1      1112 --TC------------------------G-----------AT-G-T----   1118
+
+1               4546 AAGGGGAAGGAGAAAGGAACTACCTTTATCCCCTAGTCTAGTGGTTTTCA   4595
+                                    ||                 ||    ||||      
+AAI36323.1      1119 ---------------GG-----------------AG----GTGG------   1126
+
+1               4596 AACTTTTGACCACCACCCATAAGATTTACATTTTCAATTATGACCCAAGG   4645
+                      ||    |      | ||          ||    |     ||    || |
+AAI36323.1      1127 -AC----G------A-CC----------CA----C-----TG----AA-G   1140
+
+1               4646 TCTGCATATCTATTTATCAGAAACAAAAATGTCATGAAAGAATCCATTTA   4695
+                        |     |       |     |   ||    |||  ||          
+AAI36323.1      1141 ---G-----C-------C-----C---AA----ATG--AG----------   1151
+
+1               4696 CTACTATGGTAAGTACTACTGTGAAGTATTTTAAGATTTTCTACTGTCAT   4745
+                     | |  ||  |   |  | |  |   |        |     |  |  ||  
+AAI36323.1      1152 C-A--AT--T---T--T-C--T---G--------G-----C--C--TC--   1166
+
+1               4746 ATATTCATTTAAAACATACTGGCCCCAACACATTCAACTGAGTTCGTACT   4795
+                      ||  |        |  |       |  || | |   |  |    |    
+AAI36323.1      1167 -TA--C--------C--A-------C--CA-A-T---C--A----G----   1179
+
+1               4796 CTACTAGTGGGCTGCATCCTGCATGTGAAAAACCCGGCTCTAGCCCAACT   4845
+                        | |    |  | |    | |  |        | || ||    |  | 
+AAI36323.1      1180 ---C-A----G--G-A----G-A--T--------C-GC-CT----C--C-   1194
+
+1               4846 TGCTTGGCCCCTGGAAAACAAGGGGGTGGAAGGCAAGGAAACCTGGGAAG   4895
+                       | |      | |      |     |          |     |      
+AAI36323.1      1195 --C-T------T-G------A-----T----------G-----T------   1202
+
+1               4896 GCTAGAGGTGGTCAGGGCCACACATACTGTCAGAGGCTTTTTGATGGCCT   4945
+                      |   |       |  |      || |   |  |       |||      
+AAI36323.1      1203 -C---A-------A--G------AT-C---C--A-------TGA------   1214
+
+1               4946 CCTGGATCTCCATCCGCTTGCGAGCAATGGTCTGGTCCAGCTTCCGCTCA   4995
+                         ||   |||     ||    |  |       |||||        |  
+AAI36323.1      1215 ----GA---CCA-----TT----G--A-------GTCCA--------T--   1229
+
+1               4996 AAAGCCAAGAGATCCATGTACGCCTGAGACTCTGGAACAAGCTCCCGGAT   5045
+                          |   | | ||    | | |||| |     |    |    ||    
+AAI36323.1      1230 -----C---A-A-CC----A-G-CTGA-A-----G----A----CC----   1245
+
+1               5046 CTGAAGGAAGGTAGCAGAAGCTCATCAGCTTGCTTCAGCCAAAGCCTGGC   5095
+                     |           || || ||      |   |  ||    |  |       
+AAI36323.1      1246 C-----------AG-AG-AG------A---T--TT----C--A-------   1258
+
+1               5096 TCTTTCCTCCCTTCCTGCTGCAGCCCAGCTTTGAGAGAGATGGACACCCA   5145
+                                    ||||      |||  ||        |         
+AAI36323.1      1259 ---------------TGCT------CAG--TT--------T---------   1268
+
+1               5146 CCCCAAGGTGGCCACTGGGCAGGCCTCCCAGGTGTCCTCTTAACACTTAC   5195
+                             |    |    |||      ||    |        || |   |
+AAI36323.1      1269 --------T----A----GCA------CC----G--------AC-C---C   1280
+
+1               5196 TCGCTGAGGTAGAACCTTATCTGCCATCTTCCTCCTCTTTAACCTGGGGA   5245
+                      | |  | |  | | |   | |  ||             |  ||     |
+AAI36323.1      1281 -C-C--A-G--G-A-C---T-T--CA-------------T--CC-----A   1295
+
+1               5246 GGACAGAAACCCACTTAAGAGGTCAATGGTCCAAAAAAGGACACTCACTC   5295
+                      |   |  |   |  |    || |     |||       |        | 
+AAI36323.1      1296 -G---G--A---A--T----GG-C-----TCC-------G--------T-   1308
+
+1               5296 CCATAACGCCCCTCCAGTCTCCAGGACCCTCTCCCCCAGGAGAGCCTGGA   5345
+                        |       | ||||    |  |          ||  |||| ||    
+AAI36323.1      1309 ---T-------C-CCAG----C--G----------CC--GAGA-CC----   1324
+
+1               5346 GTCATCCTCAGTCACCAAAGCTCTTAAGATAGAAGGAAACCCTCTGCTAC   5395
+                      |||     ||       |  ||               |        |  
+AAI36323.1      1325 -TCA-----AG-------A--TC---------------A--------T--   1334
+
+1               5396 CACCAGAGCTGAGTTAGGCAGAGTGAGAGAAGCAGGATGCTCTTACCCCC   5445
+                        |  | ||||  |       ||           ||      |      
+AAI36323.1      1335 ---C--A-CTGA--T-------GT-----------GA------T------   1346
+
+1               5446 GGCGCTGGGCAGGCATGGGAGGCTGCGCCTGGGGCACAAGCAGGCGTTTT   5495
+                          | || |   |    |         |          |   |    |
+AAI36323.1      1347 -----T-GG-A---A----A---------T----------C---C----T   1356
+
+1               5496 CGGAATGGATCCATCATGGTGGGTGGCATGCCAGGTCGAAGCGGAGCTGC   5545
+                       | | ||       |        || | |  |    | | | |||||||
+AAI36323.1      1357 --G-A-GG-------A--------GG-A-G--A----G-A-C-GAGCTGC   1376
+
+1               5546 TGCACCAAATGGGGAGCCAGCAGGGGGTCCCACCTGCAAGCCAGCCATGG   5595
+                     |        |                 |     ||   | |||  |    
+AAI36323.1      1377 T--------T-----------------T-----CT---A-CCA--C----   1386
+
+1               5596 GCATCCGGTTCCCTGGTGACATGCCAGGTCGCTGGGGGAAGTGAGCCAAC   5645
+                      ||    |  |||| | |    | |    | |       |  | |  || 
+AAI36323.1      1387 -CA----G--CCCT-G-G----G-C----C-C-------A--G-G--AA-   1404
+
+1               5646 GGGGGTGCATAGGTCAGGGGCAAGGCCCTCCGGGACCCATAGCCCATGCC   5695
+                           ||  | ||        |          |       |  || |  
+AAI36323.1      1405 ------GC--A-GT--------A----------G-------G--CA-G--   1415
+
+1               5696 CTCCATCCCTCTCGTCAGCCAGGTAGGGCCTGAGCAGCACACCAGAGCCC   5745
+                                  | ||  ||  |     ||                   
+AAI36323.1      1416 -------------G-CA--CA--T-----CT-------------------   1423
+
+1               5746 TGCTGGAGCCCCAGGAACAAAGGGGAGTGGGCGCCTGAGCACAGAGTGTA   5795
+                     |  |   |   |     |  |    |    | |  |  |  |  |  |  
+AAI36323.1      1424 T--T---G---C-----C--A----A----G-G--T--G--C--A--G--   1437
+
+1               5796 AACCACACCTGCCCTGCCCCCTGCAACCGCCCTGGCAGCCATGCCAGCGA   5845
+                          ||        |    | |  |          ||    | ||| | 
+AAI36323.1      1438 -----CA--------G----C-G--A----------AG----G-CAG-G-   1450
+
+1               5846 ATGAGGCCTGCCAGAACCTGGGCTGGGAGGAGGGTCCTGCCTGCAGAGGG   5895
+                     |  |   |||   |||      |       | ||   || ||     |||
+AAI36323.1      1451 A--A---CTG---GAA------C-------A-GG---TG-CT-----GGG   1469
+
+1               5896 AAGGGCCTTGGGGAGCTTTTCAGGGCCCATTGCTACCTTCCAGCCCCAGC   5945
+                      |           |    |||   | ||  ||  ||| |  |     |  
+AAI36323.1      1470 -A-----------A----TTC---G-CC--TG--ACC-T--A-----A--   1485
+
+1               5946 ATGCTGTGCCCTATTCCCTGGGCAAGCTGGTCCCTATTCTCTCAGACAGT   5995
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               5996 CCTGCCAAGCCCTGCCCTCCTTCTCTTTCTCCCATCATGAAGAAGAAGCA   6045
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6046 TGGCTGAGAGGCACAGGGGCAGTGTCACTGCCAGGCAGAGGAGTGTACTA   6095
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6096 TAGTATGAGTAGGCCAATGGCGCAGAGCCCCAATCCCCATCCTCTGTGGC   6145
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6146 CGAGGGAGAAAGGGGTCTGGTAGGCAGCAGCACCCCAGGTGAGCAGGGCT   6195
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6196 GCAACAGGATGGCTTGGAACGTGTACCAGCTGGTGGGGGTGGCCTCGGGC   6245
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6246 AGGGTACAGGGACCCTGTACCCTGTAGTCTGGTATCACATAGCCCCCACC   6295
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6296 CACAGCCCAGAACTGGACCCTCCTCTTACCTCCCTACTGCCCAACTACTA   6345
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6346 CCCCTATGACAGAAGACCCCAGAAGGGAAGCTATGGCTCCTGGGTGGCCT   6395
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6396 GTGGGAAAGAGAGCAGCTAGCACCTGGACTCTGCCAGTGGTCCAGGCACC   6445
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6446 ACCTGGCAGCCAGGACTGGCTCTGGCTCCGTGTAGCCCTGGCAATCCCAA   6495
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6496 GCTGGAGAAGGGGGCTAAGATTATCCTGGGAGGCAAGGATAGAGGCCCAG   6545
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6546 GCTGAGCAGCAGGAAAGTGGGAGACAGAAATAGCTTCTTTAGATGCCTGC   6595
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6596 AGAAGGATTTCCCACCTGAGGCCTTGCTCCCTGACATTTCTGTGGAGCCC   6645
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6646 ATCTGGGAGTCACCTCCACCCCCACCCGCCTCCCCATGGCTGCTGCCTGC   6695
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6696 AAGGCCTGTTTGGCAGCTCTGCCTTGCACACACTGTCCCTGGCAGCTTCA   6745
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6746 CAGGGCTGGCCCCAGGGCCCAGATTATGCAACGAGCACAACCAGCCAACC   6795
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6796 AAGCCCGGCAGGGTGGAGACTTGTACCAAATCAAAGGACCCTCCCCCACC   6845
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6846 CCAGCATCATGGAGATGAGATTCTTCCCCAACCTCTTCATCCCGCACTAA   6895
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6896 ACCCATGTTCCCAACACAGAGGGTCAGATTCTTGACCAGATGCGGAGATG   6945
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6946 GAAAGAAACATGACCCACAGACGTGAGGATGGGGAGAGGAGGAGCAGGGT   6995
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               6996 GGGACGGAAGTGTTTGGGAGAATAAAAAGTTCAAAGTGGGGGGCTCTGGG   7045
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7046 GCTTTGGGAGTCCTGCCAAAGTCTCTCTGCATCAGGAAGAGATTAATCAG   7095
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7096 AGCTGTTGAAAGGCAAAAGACAGCCTCTTTCTCTGCCTTAAAGATTGTTC   7145
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7146 TTTCTCTGGCCTGAGATTATAGAAAAAAACTAAGTGTGGCTACAGCTGTA   7195
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7196 AGCCCAGGCCCAGACATCCCAGACTAGTTTTTCCTAGTGCCTGAGACAAA   7245
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7246 GACAGGGAAGAACTGAAGCAGTGGGTCCTGCAGAGGTGAGCGAGGGCCCT   7295
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7296 GTGGTCCCCAGGAAGCTCCCTGCTGCAGTGTTCACAAAACCTGCAGCACC   7345
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7346 ACCCATCCCTCCTGGGCAGGTGCTCCGGTAACAGGAAGTCCCAAGACAAG   7395
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7396 GCCTCATAGGCAGGGTCTGGAATAGGCTCCACCCAGACATCTGCTCCAGG   7445
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7446 TTTCCTGGGCCCAGAGCCCCTGGCTCACTCAGGGCCCCAGGGGAAGGCTG   7495
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7496 CTTATAGTTCAAGTCCCAGCTGAGCCTTGCCAAGCTCCATAGGGCTTATA   7545
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7546 GGCGCTAGCAACTCCTCCCACTTCAAAAAACAAAACAAAACAAAACAAAC   7595
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7596 AAAAAAAAACAACTCAGGAGTTAAAGAAAAAAAAAAAAGCAGTCCAGCAC   7645
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7646 TCTGAGCCTCCCTAACTCCCTGCCTGCAGCAGGACCAGGTAGGCCTGGAT   7695
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7696 CAATCCCCTGAACCCCAGATGAGGAATCCAGGGCTCCGGTGAGCGTGCTT   7745
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7746 TGCCCTGCCCCAAATGTGGCCCTGATGCTCCTGGAACCTGGGCCTGAGGG   7795
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7796 CCTCAGTTGGGGAACATACCACCCACTCTCCCATGAGTAAAAAGGATTTT   7845
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7846 GAGGCCGGGTGCAGTGGCTCACGCCTATAATCCCAGCACTTTGGGAGGCC   7895
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7896 GAGGCGGGTGGATCACAAGGTCAGGAGTTCGAGACCATCCTGGCCAAGAT   7945
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7946 GGTGAAACCTCGTCTCTACTAAAAATACAAAAAAATTAGCCGGGCGTGGT   7995
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               7996 GGTGGGCGCCTGTAATCCCAGCTACTCAGGAGGCTTGAGGCAGAGGATTG   8045
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8046 TTTGAACCTGGGAGGCGGAGGTTGCAGTGAGCTGAGATCATGTCACTGCA   8095
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8096 CTCCAGCCTGGGCGACAGAGTGAGACTCCGTATCAGAAAAAAAAAAATTT   8145
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8146 TTTTTTTGAACTTTTTGAACTCTCTGGAGTGAACCCAGCAATCTGAGGTT   8195
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8196 TTTGTTATTTTGTTGCCCAGGCTGGAGTGCAGTGGCAGGATCATAGCTCA   8245
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8246 ATGCAGCCTTGAACTCCTGGACTCAAGCAATCCTCCTGCCACAGCATCCT   8295
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8296 GAGTAGCTGGGACCATAAGCGCACACCACCATGCTTGGCTAAATTTTTTT   8345
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8346 TTTTTTTTTTAAGAGATGATGGTCTCACTATGTTGCTTAGGCTGGTCTTG   8395
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8396 AACTCCTGGTCTCAAGTAATCCTTCTGTCTGGGCCTCCCAAAGTGCTAGG   8445
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8446 ATTACAGGTGTGAGCCCACCATATCCTGCCCTGGAGGTTTTTTTCTTTTC   8495
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8496 TTTTTCTTTTTTTAGGTTCCTCTGTTAACTGTGATCCACAGCTAGAACCA   8545
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8546 CCCTCTGGAGGAAGGGAGGTCATCACTTCCCTTCTTTCAACTATTTGCTC   8595
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8596 AGCTTGGGCCTCAAATTCTCACTTTTCAAGTGCATCTCATGAGCCCTAAC   8645
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8646 AGACAGGAACCCCTTTGTTTCCCAGATCTCAAGTCCCTTCTCCTGGCAGT   8695
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8696 CATACAACTGGACTTGGAAAGAAGGCAAATAGGATCCTCTTCAAACTCAG   8745
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8746 CCAAAGTTAGCTGGCTGGGTTCTCCTTCCCATCTACCTCTCCTGCCAGGA   8795
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8796 GGAGGAAAGCTAGTGGGATGGGAAACCCAGACTCAGGGCCATCTCCTACT   8845
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8846 TCCGCACAGCTAGCAGCCCAGGCCTAACCAGCCAGCCAGCTTGGCCTTGC   8895
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8896 CACAGGCCCAAGGCCACCCCCCACCAAAACATGTGGAATCCATCCTCTCA   8945
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8946 GGGGCTGTCCCAAGGGCACATTTCCTATGGCTTGCATGCCAAGGAAACTG   8995
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               8996 GAGCGGCTTGTCTGTTCCAGGTCCTTCCAAGGCCAAAGGCCCACAGATGG   9045
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9046 TGCCCAGGCCAGGTCTCAGTGGGCAGGCCCAAGGGCTACAATGAATGATG   9095
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9096 CAGGGAGCCCTCAGCAACACCCTGGGCCCATGAATCCCCAACGGGGACAG   9145
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9146 CAAGGTGGGAGAGATGAGCCCCAGCTGGAATCCCTGGGACCAGGTCTGTC   9195
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9196 TCTGCCCATACCCAGACTCTCTTTTCTCTTGAGAAAGGAGGAAGAATGAG   9245
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9246 GAGTAAGAAGGAAAAAAAAATCCAGTCACTGTCCCTAGTTAAGCCATCTC   9295
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9296 CTTAGAAGTGAGGGCCCAGTGGGGCAGGTAGGCTGTGTATACTCCACGAG   9345
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9346 GATCCCTAAGGACCTCTGCCTGGAGACATGAGTCGAAAACAGAGGAAGCC   9395
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9396 CACAGCAAACCCGTAGATGAGCAAGAAGCCAGTGTCAAATGCTTGGGCAC   9445
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9446 ATGGCTTCGGACGTGGTGGAGTTAGAACCTGAAGGCCAAATAAAAATGCA   9495
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9496 GAGAGGGTGACAAGGCAGATGGGCACAGTTTCCAAGCCCTCTGGGGCAAC   9545
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9546 CTGAACAGCAGACTAGAGCACTGGCAGGGTCAGGCTGAGGTCCTCACACA   9595
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9596 CTGAGCAGAAGTCGCTGCTTTGCAAGGGCTTTTGAAGCTGCAATCTGAGC   9645
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9646 AGCTCTCAAAACCCCAAAGGGGTCAGGACAGCACTCTTTGAAGCAACTCT   9695
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9696 CGCAGACTCCTCCGGCCCCAGACCAGCAGGGCTCCACTCTGCACGTCCAG   9745
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9746 ACTAATCAACTCCCGGACACGATGACAGGAGGCAGAAAGCCCAGAAGAGA   9795
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9796 GCCGGCCTGTGACTGGGCTGGGCCTCCCCTCAGGCCAGGCCACCACCGTC   9845
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9846 TCTGGTCTAAGCTGGAGTCCTCCCAGCGAAGGCGCCTGGCCCTGCCTCAG   9895
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9896 GAGTAAAGTCCGCCCGTGCACAAGCTGGAATCCCCTGGCCCTAGCCTCAG   9945
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9946 CGTCCCGTGCCCGTGGGAAGCCAGGCTCCTTCCTCCTTATTAGCAGCCGG   9995
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1               9996 GAGCCATCTCAGACACGCTAGAGCTCCGCCAGTTCCCAATCAGAAAAAAC  10045
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10046 AGGGCAGACTTGGACTGGGACCAAGGCCGATGCAGGGTAACCCCGGTTTC  10095
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10096 TCAGCGAGGGCCCTTTCCCAAACTTTCTCATCACTTTCCAGCCCTCCTAC  10145
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10146 CCTAGACTTCTCAACCCACCCGCCACAATTCACTGGCTCCCCAAACTCCT  10195
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10196 CCATCTCCCAGTCACTCGGAATCCCTGTGCCGCGGAAGCCCCCAGGCCTC  10245
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10246 CCAGCTGCTTCCAGCCCTCCGCTGCAGAACCTGCTTCCCCTTCCCACTTC  10295
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10296 TCCACCGCGACCCGCCGCAGCCCGAGGGTCCCGGCCCGCCCTCCACCGTC  10345
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10346 TCCCGGAGTTCCTCATGCATTCCCCAGGGCCCTCACTCGAGGCCCCTTCA  10395
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10396 GCCGCCGGCCCGGGCGCCCTCGCAGCGCCTCTCGCCCCCGTCCGCTCGCG  10445
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10446 TCCTCCTTGCTCACCTGGTACTGCGCCGCGGGGCCCGCGGGGCCCATGGG  10495
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10496 GCGGAAGGCGGCGGCCCCGGGGCCCCCCACGCCTCCTGCCGGACCCGGTC  10545
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10546 CCCGGAGCGCCGGTCCGGGCAGCATGCCGGGTCCCGCGGGGGGAGGCGGC  10595
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10596 GCTCCCAGGGCCGCAGCCACGGCGCCGCCGCCAGGGCTTAGCGGGGGCAG  10645
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10646 CGGGAACCCGCCCGCGCCTCGGCCCGACATCGCTCCGTCCCGTCCCGCGG  10695
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10696 TGCCGCGATCCGGACTCCGGGCTCCGCGTCGAGTCCACTCCGTGCTCTGT  10745
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10746 GCTCCGCGATCCGGGACTTGGCGATCTTAATTCCGGGTTCCGGGATTTGT  10795
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10796 CGATCCGGGCTCCGGGATTTCCTAATCCAAGTTCGCGAGTTCCTCACAGA  10845
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10846 CCCGGTTCGGGACAGATTCCGCTCCTGCCCGGGAGATTCCGGATCCAGGA  10895
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10896 TCTGCTGCGGGCCCGCCTTCCGTCCCCGGCCTCCGGAGGTTTGGCCGCCC  10945
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10946 GAGTCGAGTTACCCAGAGGCGGCTACGAACTCCCTGCCCCGCCCAACCCA  10995
+                                                                       
+AAI36323.1      1485 --------------------------------------------------   1485
+
+1              10996 GCCCAG  11001
+                           
+AAI36323.1      1485 ------   1485
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,288 @@
+---
+title: "Visualización y exploración de datos"
+lang: es
+date: today
+execute: 
+  eval: true
+  error: true
+engine: knitr
+bibliography: ../../references.bib
+language:
+   title-block-published: "Última actualización:"
+   section-title-references: "Bibliografía"
+format:
+   html:
+      embed-resources: true
+---
+
+# Preparación
+Necesitamos tener instalados los paquetes `ggplot2` y `qvalue` en R. En la
+carpeta de trabajo encontraréis también los datos necesarios.
+
+# Objetivos
+1. Practicar la representación gráfica de datos con `ggplot2`.
+2. Aprender lo que es una gráfica volcán y una gráfica de Manhattan.
+3. Demostrar que la exploración gráfica puede ayudarnos a comprender los datos.
+
+# Datos
+En esta sesión, trabajaremos con los resultados de un análisis de asociación
+genómica entre un fenotipo cuantitativo y los genotipos de 195 peces en 11746
+posiciones variables o SNPs de su genoma. El archivo `gwas.txt` ha sido obtenido con
+el programa [PLINK2](https://www.cog-genomics.org/plink/2.0/) [@Purcell2007; @Chang2015].
+Contiene 16 columnas, descritas a continuación y también
+[en este enlace](https://www.cog-genomics.org/plink/2.0/formats#glm_linear):
+
+- **CHROM**, **POS**, **ID**: cromosoma, posición e identificador del SNP.
+- **REF**: alelo de referencia.
+- **ALT**: alelo alternativo.
+- **PROVISIONAL_REF.**: indica si el alelo de referencia es provisional o no.
+- **A1**: alelo cuya dosis se usa en la regresión como variable independiente.
+- **OMITTED**: el otro alelo.
+- **A1_FREQ**: frecuencia del alelo A1 en la población.
+- **TEST**: test estadístico aplicado. *ADD*: el efecto aditivo del alelo A1 es nulo.
+- **OBS_CT**: tamaño muestral (número de individuos) en la regresión.
+- **BETA**: coeficiente de regresión estimado para el alelo A1.
+- **SE**: error estándar del coeficiente de regresión.
+- **T_STAT**: estadístico *T*.
+- **P**: valor *p* del estadístico.
+- **ERRCODE**: código de error, si lo hay, o bien "." (sin error).
+
+Cargamos los datos en una sesión de R para empezar a explorarlos, y activamos
+el paquete `ggplot2`, que usaremos después.
+
+```{r}
+library('ggplot2')
+gwas <- read.table('gwas.txt')
+```
+
+:::{.callout-note icon=false}
+## Desafío
+La orden `read.table('gwas.txt')` no da error, pero es errónea. ¿Puedes arreglarla?
+:::
+
+# Comprobar las suposiciones
+Sabemos que el estadístico *T* es la relación entre la diferencia del valor
+estimado de un parámetro ($\beta$) respecto su valor asumido (0) y el error
+estándar de la estimación. Comprobémoslo con `ggplot()`:
+
+```{r}
+ggplot(data = gwas,
+       mapping = aes(x = BETA / SE, y = T_STAT)) +
+   geom_point() + 
+   geom_abline(intercept = 0, slope = 1, color = 'red')
+```
+
+:::{.callout-note icon=false}
+## Desafío
+Comprueba gráficamente las suposiciones siguientes. Esfuérzate por imaginar qué
+forma esperas que adopte la gráfica en cada caso antes de representarla. Si en
+algún caso encuentras una relación diferente a la esperada, trata de explicarte
+por qué.
+
+1. El valor *p* sólo depende del estadístico *T*.
+2. El alelo A1 es siempre el que tiene la frecuencia más baja, en estos datos.
+3. El error estándar es menor cuanto mayor es el tamaño muestral.
+4. La distribución de valores *p* se hace uniforme hacia la derecha.
+:::
+
+# Agrupación de datos
+Podemos mapear una variable categórica a un estético como el color,
+el tipo de línea o la forma del punto, para representar datos de
+diferentes categorías separadamente. A continuación usamos el
+color para resumir la relación entre frecuencia alélica y error
+estándar del estadístico, según el número de individuos utilizados.
+
+```{r}
+# OBS_CT no es categórica, pero la tratamos como tal con "factor()".
+# Observa que el color aquí se mapea sólo en la capa "geom_smooth()",
+# para que los puntos sean todos negros.
+ggplot(data = gwas,
+       mapping = aes(x = A1_FREQ, y = SE)) +
+   geom_point() +
+   geom_smooth(mapping = aes(color = factor(OBS_CT)), se = FALSE)
+```
+
+Otra forma de agrupar los datos es mediante las *facetas*:
+
+```{r}
+#| fig.width: 10
+#| fig.height: 10
+
+ggplot(data = gwas,
+       mapping = aes(x = A1_FREQ, y = SE)) +
+   geom_point() +
+   facet_wrap(~CHROM, scale = 'free')
+```
+
+:::{.callout-note icon=false}
+## Desafíos
+1. Haz que no sólo las líneas, sino también los puntos tengan colores diferentes, que
+correspondan a los valores de OBS_CT, en la gráfica donde has usado `geom_smooth()`.
+2. Añade una línea suavizada (`geom_smooth()`) a cada cromosoma en el gráfico anterior.
+3. ¿Cómo puedes deshacerte de los mensajes de `geom_smooth()`?
+4. ¿Para qué sirve la opción `scale = 'free'` en `facet_wrap()`?
+:::
+
+# Agrupación de datos y estadísticos
+Al examinar la relación entre el error estándar y el tamaño muestral, podemos
+tratar el tamaño muestral como variable categórica, porque tiene sólo 7 valores
+diferentes. Observa cómo en el bloque siguiente añadimos información sobre la
+media de cada categoría sin modificar el marco de datos, aprovechando la
+función `stat_summary()`:
+
+```{r}
+ggplot(data = gwas,
+       mapping = aes(x = factor(OBS_CT),
+                     y = SE)) +
+   geom_violin() +
+   # Con "group = 1" definimos un único grupo (cualquier valor constante sirve),
+   # para que una línea una todos los puntos, en lugar de generar una línea en
+   # cada valor de X:
+   stat_summary(geom = 'line',
+                fun = 'mean',
+                group = 1,
+                colour = 'gray') +
+   # Los puntos, en cambio, son uno para cada grupo:
+   stat_summary(geom = 'point',
+                fun = 'mean',
+                colour = 'red',
+                size = 2)
+```
+
+Otra forma de representarlo:
+
+```{r}
+ggplot(data = gwas, aes(x = OBS_CT, y = SE)) +
+   stat_summary(geom = 'line', fun = 'mean', linewidth = 7, color = 'gray') +
+   geom_point(position = 'jitter', size = 0.1) + 
+   stat_summary(geom = 'point', fun = 'mean', color = 'red', size = 4) +
+   theme_minimal()
+```
+
+:::{.callout-note icon=false}
+## Desafío
+1. ¿Para qué sirve la opción `position = 'jitter'`?
+2. ¿Por qué en la gráfica de violines teníamos que especificar `group = 1` y
+en la siguiente no, al representar la línea?
+3. ¿Para qué sirve la función `factor()` al representar la gráfica de violines?
+4. ¿Se te ocurre alguna otra manera de combinar datos y sus estadísticos (como la media)
+en un mismo gráfico, sin usar `stat_summary()`? ¿Qué método te gusta más?
+:::
+
+# Barras
+Si combinamos el alelo A1 con el OMITTED, clasificamos cada SNP en una de las 12
+posibles combinaciones de dos nucleótidos diferentes. Podemos representar las
+frecuencias de los 12 tipos de SNPs con un gráfico de barras. Obsérvalo e intenta
+explicar el patrón.
+
+```{r}
+gwas$ALLELES <- paste0(gwas$A1, gwas$OMITTED)
+ggplot(data = gwas, mapping = aes(x = ALLELES)) + geom_bar(stat = 'count')
+```
+
+`geom_bar()` automáticamente representa el número de observaciones de cada tipo.
+Este geométrico usa el estético `fill` para el color de las barras. Podemos mapear
+una variable categórica a `fill`. Por ejemplo, ahora que tenemos clasificados los
+SNPs en 12 categorías, veamos cuántos hay de cada tipo en cada cromosoma:
+
+```{r}
+ggplot(data = gwas, mapping = aes(x= CHROM, fill = ALLELES)) +
+   geom_bar()
+```
+
+:::{.callout-note icon=false}
+## Desafíos
+1. Genera una nueva variable categórica en `gwas` que indique si el SNP es una
+transición (AG, GA, CT, TC) o una transversión (los otros) y comprueba con un
+diagrama de barras si las proporciones son comparables entre cromosomas.
+2. Mira también si existe relación entre el tipo de mutación y la frecuencia
+alélica.
+:::
+
+# Gráficas de volcán
+Las gráficas de volcán representan simultáneamente la significación de cada
+resultado (valor *p*) y la magnitud (y el signo) del efecto estimado. Los valores
+*p* se muestran en escala logarítmica y con el signo cambiado, para que los
+resultados más significativos destaquen como *mayores*. Podemos añadir algunas
+líneas que indiquen los umbrales arbitrarios que utilizamos para seleccionar los
+resultados creíbles, o bien añadir color a los puntos seleccionados como positivos.
+A la hora de decidir estos umbrales es fundamental conocer
+la tasa de falsos positivos esperada con cada umbral (FDR). Para ello, añadimos
+al marco de datos una columna con el valor *q* [^1], calculado con la función `qvalue()`
+del paquete `qvalue` [@qvalue].
+
+[^1]: El valor *q* de un test es la proporción de falsos positivos que esperamos
+   entre todos los resultados con un valor *p* menor o igual al de ese test.
+
+```{r}
+library('qvalue')
+gwas$q <- qvalue(gwas$P)$qvalues
+ggplot(data = gwas,
+       mapping = aes(x = BETA, y = -log(P), color = q)) +
+   geom_point() +
+   scale_color_gradient(name = 'FDR', trans = 'log',
+                        breaks = c(0.001, 0.01, 0.1),
+                        low= 'red', high='gray') +
+   geom_abline(intercept = -log(max(gwas[gwas$q <= 0.001, 'P'])),
+               slope = 0, linewidth = 0.2, linetype = 2, color = 'black') +
+   theme_minimal()
+```
+
+
+
+
+:::{.callout-note icon=false}
+## Desafíos
+1. Genera una gráfica de volcán para cada cromosoma.
+2. El número de SNPs cuyo genotipo está significativamente asociado al fenotipo,
+   ¿te parece elevado o bajo?
+3. Escoge un umbral y clasifica los SNPs en "positivos" y "negativos", y explora
+   la proporción de positivos por cromosoma. ¿Puedes hacerlo sin añadir una columna
+   al marco de datos?
+:::
+
+# Gráfica de Manhattan
+Las gráficas más características de los estudios de asociación genómica son las
+de Manhattan, donde la posición de los puntos a lo largo del eje horizontal se
+corresponde con la posición en el cromosoma, y la altura del punto es proporcional
+a su significación. Lo difícil es poner los cromosomas unos detrás de otros y
+alternar el color de los puntos en cada cromosoma. Para ello, no tenemos más
+remedio que añadir algunas columnas al marco de datos (o bien usar algún paquete
+de R específico, pero no hace falta).
+
+```{r}
+#| fig.width: 10
+
+# Como no tenemos a mano la longitud de cada cromosoma, usaremos su posición máxima.
+PosicionMaxima <- sapply(split(gwas$POS, gwas$CHROM), max)
+
+# Al colocar los cromosomas uno detrás de otro, la coordenada global de un SNP
+# es la suma de su posición en el cromosoma y las longitudes de todos los cromosomas
+# anteriores. Este último término lo llamo "offset" y es 0 para el primer cromosoma,
+# la longitud del primero para el segundo, etc hasta la suma de las longitudes de
+# todos los cromosomas menos el último, para el último.
+n <- length(PosicionMaxima)
+offset <- c(0, cumsum(PosicionMaxima[-n]))
+# Hay que corregir los nombre del vector "offset":
+names(offset) <- names(PosicionMaxima)
+# Añadimos el "offset" a cada SNP de gwas:
+gwas$offset <- offset[gwas$CHROM]
+gwas$GlobalPosition <- gwas$offset + gwas$POS
+# Faltan los colores alternantes entre cromosomas. Una estrategia puede ser esta:
+colorCromosoma <- rep(c('A', 'B'), n / 2)
+names(colorCromosoma) <- names(PosicionMaxima)
+gwas$color <- colorCromosoma[gwas$CHROM]
+
+ggplot(data = gwas, mapping = aes(x = GlobalPosition, y = -log(P), color = color)) +
+   geom_point() + theme(legend.position = 'none')
+```
+
+# Información de la sesión
+
+```{r}
+sessionInfo()
+```
+
+
+
+

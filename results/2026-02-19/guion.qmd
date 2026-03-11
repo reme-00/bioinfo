@@ -123,7 +123,7 @@ if [ ! -e aln1.txt ]; then
    # Utilizamos el carácter "\" para que Bash ignore el salto de línea
    # y poder distribuir los argumentos y opciones en más de una línea.
    needle -asequence HumanChr17.fa \
-          -bsequence HumanaSMARCD2.fa \
+          -bsequence HumanSMARCD2.fa \
           -gapopen 15.0 \
           -gapextend 0.5 \
           -auto \
@@ -142,6 +142,10 @@ fi
 5. Alinea también el tránscrito de SMARCD2 de chimpancé a su cromosoma.
 6. Alinea también los dos fragmentos cromosómicos.
 :::
+
+
+#(22/02/2026) me he quedado haciendo por aqui. 
+
 
 Para alinear tránscritos o incluso proteínas a un genoma de referencia, es mejor
 usar el programa `exonerate` [@Slater2005], que puede aplicar los parámetros más

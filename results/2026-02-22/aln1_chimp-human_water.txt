@@ -1,0 +1,919 @@
+########################################
+# Program: water
+# Rundate: Sun 22 Feb 2026 22:15:44
+# Commandline: water
+#    -asequence ChimpChr17.fa
+#    -bsequence HumanChr17.fa
+#    -gapopen 15.0
+#    -gapextend 0.5
+#    -auto
+#    -outfile aln1_chimp-human_water.txt
+# Align_format: srspair
+# Report_file: aln1_chimp-human_water.txt
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: 1
+# 2: 1
+# Matrix: EDNAFULL
+# Gap_penalty: 15.0
+# Extend_penalty: 0.5
+#
+# Length: 11011
+# Identity:   10904/11011 (99.0%)
+# Similarity: 10904/11011 (99.0%)
+# Gaps:          27/11011 ( 0.2%)
+# Score: 53998.0
+# 
+#
+#=======================================
+
+1                124 AAAGCTCTGTGGGCCAAGTCCTCTAGGACTCCAGTCTGTTAATGAGGGCT    173
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                  1 AAAGCTCTGTGGGCCAAGTCCTCTAGGACTCCAGTCTGTTAATGAGGGCT     50
+
+1                174 GTGCTGTTCAAGGACCAGGTCCAGGCACCACCAATAGACAAAAGGATTTA    223
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                 51 GTGCTGTTCAAGGACCAGGTCCAGGCACCACCAATAGACAAAAGGATTTA    100
+
+1                224 TTTGGAAATTTCCAAACCTGCCAGAAGTGGCACTCGCCAAGCCCTAGGCC    273
+                     |||||||||||||||||||||||||.||||||||||||||||||||||||
+1                101 TTTGGAAATTTCCAAACCTGCCAGATGTGGCACTCGCCAAGCCCTAGGCC    150
+
+1                274 CACCCTCCTCACCAAGCTCCAAAGGGCAACACCAGTCCTCCCAGCCTCCC    323
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                151 CACCCTCCTCACCAAGCTCCAAAGGGCAACACCAGTCCTCCCAGCCTCCC    200
+
+1                324 CATTCACCTTACCCTGGCCTCCACATGCACATACCCCATACCTCAGGCCA    373
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                201 CATTCACCTTACCCTGGCCTCCACATGCACATACCCCATACCTCAGGCCA    250
+
+1                374 TGCTAGAGAACTGGAGTGTCCCCTCCCTGGCCCAAGCCGCTGGAGAGGCA    423
+                     |||||||||||||||||||||||||||.||||||||||||||||||||||
+1                251 TGCTAGAGAACTGGAGTGTCCCCTCCCCGGCCCAAGCCGCTGGAGAGGCA    300
+
+1                424 GCCCTCTGGCATCCCAGGAGATGATGGCGGCCAGAGCCGCTTGCATAGAT    473
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                301 GCCCTCTGGCATCCCAGGAGATGATGGCGGCCAGAGCCGCTTGCATAGAT    350
+
+1                474 TGAGGAAAGAAAACAAGGAGGCACCTAACAGGCTCCCTGAAAACCCCCAA    523
+                     |||||||||||||.||||||||||||||||||||||||||||||||||||
+1                351 TGAGGAAAGAAAAGAAGGAGGCACCTAACAGGCTCCCTGAAAACCCCCAA    400
+
+1                524 CTTACCCCTGTACAAAAAAAGTGGCTCCCACATAGAAAACTTGCTCCCAA    573
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                401 CTTACCCCTGTACAAAAAAAGTGGCTCCCACATAGAAAACTTGCTCCCAA    450
+
+1                574 AATAGTGCAAATACCCAAAGGAAAGGAAAAAACCAGCAGCAAGGCTGGGC    623
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                451 AATAGTGCAAATACCCAAAGGAAAGGAAAAAACCAGCAGCAAGGCTGGGC    500
+
+1                624 TTGTAGGAATGGCAAAGAACTTTGGTTTAGAAAGGCTAGGAAGAGTCTGG    673
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                501 TTGTAGGAATGGCAAAGAACTTTGGTTTAGAAAGGCTAGGAAGAGTCTGG    550
+
+1                674 GCTGCACCTCCTCTTCCTAGCCCAGCTCCCCAGAGCCAGCTCTGACCCTC    723
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                551 GCTGCACCTCCTCTTCCTAGCCCAGCTCCCCAGAGCCAGCTCTGACCCTC    600
+
+1                724 GCCCCAGGGGGAGTCTGTAAACATGCAAACCCAGCAGCCTTTGGTTCGGA    773
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                601 GCCCCAGGGGGAGTCTGTAAACATGCAAACCCAGCAGCCTTTGGTTCGGA    650
+
+1                774 AATGTCTGTTACAATGTCAAAGCACAGCCTCCAGCAGTCCTACTTGGGCC    823
+                     ||||||  ||||||||||||||||||||||||||||||||||||||||||
+1                651 AATGTC--TTACAATGTCAAAGCACAGCCTCCAGCAGTCCTACTTGGGCC    698
+
+1                824 TGCCTGCAGGGGGGCAGAGGAGGCATCTGCTGAACCCAATTAAAGCCAAT    873
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                699 TGCCTGCAGGGGGGCAGAGGAGGCATCTGCTGAACCCAATTAAAGCCAAT    748
+
+1                874 GCAAAAAGTATAAGGCTTTGGGGACCAAGCAACAAGGAATCCTATCACTA    923
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                749 GCAAAAAGTATAAGGCTTTGGGGACCAAGCAACAAGGAATCCTATCACTA    798
+
+1                924 CATTTATAAAACTAAAGCTGGAGAGTAGAGGGTGACAGCAGACACTCCTC    973
+                     |||||||||.||||||||||||||||||||||||||||||||||||||||
+1                799 CATTTATAAGACTAAAGCTGGAGAGTAGAGGGTGACAGCAGACACTCCTC    848
+
+1                974 ACCCCAGCCTACGTGTCTGCGGCCCCAGCAAGGACCCAGAGGGTGGTCTC   1023
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                849 ACCCCAGCCTACGTGTCTGCGGCCCCAGCAAGGACCCAGAGGGTGGTCTC    898
+
+1               1024 CCTCCAGGCTCCAGGGCTGGGAAGAAAGATCCCTGAGCAGTTAGGTCAGG   1073
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                899 CCTCCAGGCTCCAGGGCTGGGAAGAAAGATCCCTGAGCAGTTAGGTCAGG    948
+
+1               1074 CGAATTCCCAGCACCTGTTCCAGTTCCTGCCTTCGCTGCTGCACCTGGAG   1123
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1                949 CGAATTCCCAGCACCTGTTCCAGTTCCTGCCTTCGCTGCTGCACCTGGAG    998
+
+1               1124 AAGGGAGAAACCAAGTGGCTCAGGCCTTTGCTACTCACGGCCAAATGAGG   1173
+                     |||||||||||||||||||||||||||||||||||||||||||||.||||
+1                999 AAGGGAGAAACCAAGTGGCTCAGGCCTTTGCTACTCACGGCCAAAGGAGG   1048
+
+1               1174 GAAAACAGGGCAGAGCCCCACCTTGGCAAAGATGTGCCTGCCTACTGCTT   1223
+                     |||||||||||||||||.||||||||||||||||||||||||||||||||
+1               1049 GAAAACAGGGCAGAGCCTCACCTTGGCAAAGATGTGCCTGCCTACTGCTT   1098
+
+1               1224 CCTGGGCCCAGGGCTGGTGGTAGAAAGCAGCTCGTCTCTCCTCCTCAGGA   1273
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1099 CCTGGGCCCAGGGCTGGTGGTAGAAAGCAGCTCGTCTCTCCTCCTCAGGA   1148
+
+1               1274 TTTCCAATCACATCAGTGATGATCTGCAAAGAGCCAGGAGGAAAGCCATA   1323
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1149 TTTCCAATCACATCAGTGATGATCTGCAAAGAGCCAGGAGGAAAGCCATA   1198
+
+1               1324 GCATAATCCCCACCCCTGGGCTAATCCACCCTGGGAACTGCTGTGGGTAA   1373
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1199 GCATAATCCCCACCCCTGGGCTAATCCACCCTGGGAACTGCTGTGGGTAA   1248
+
+1               1374 AAATCACCCAGAGCTTTACATAGGAGTCCCCTCGGGAAAGAGGACTACAC   1423
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1249 AAATCACCCAGAGCTTTACATAGGAGTCCCCTCGGGAAAGAGGACTACAC   1298
+
+1               1424 CTTGAGGTCTCGGCGCTGGGAACGGAGCCATTCCTGGATGAAGTCCTGGG   1473
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1299 CTTGAGGTCTCGGCGCTGGGAACGGAGCCATTCCTGGATGAAGTCCTGGG   1348
+
+1               1474 GGTCGGTGCTAAAACTGAGCATGAAATCTCTCTGGGTCTTCAGCTGGTTG   1523
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1349 GGTCGGTGCTAAAACTGAGCATGAAATCTCTCTGGGTCTTCAGCTGGTTG   1398
+
+1               1524 ATGGACTCAATGGTCTCATGGATCTGGAGAAGATACCTGTGTCAGACTGT   1573
+                     ||||||||||||||||||||||||||||||.|.|||||||||||||||||
+1               1399 ATGGACTCAATGGTCTCATGGATCTGGAGAGGGTACCTGTGTCAGACTGT   1448
+
+1               1574 GCCCCCAAAGCTTAAATGCAAGCAACTGAGCCAGAGTTCCCATCCCGTCC   1623
+                     ||||||||||||||.|||||||||||||||||||||||||||||||||||
+1               1449 GCCCCCAAAGCTTACATGCAAGCAACTGAGCCAGAGTTCCCATCCCGTCC   1498
+
+1               1624 TCCAGGTGCTACATGTATGGAAATGCTGGACAGAGCCAGCCCACCCCAAT   1673
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1499 TCCAGGTGCTACATGTATGGAAATGCTGGACAGAGCCAGCCCACCCCAAT   1548
+
+1               1674 CCTGGGCCCCAGAGGAAGCTGTCGAGCCAGAGGGCCCACCTTAACATCAA   1723
+                     ||||||||||||||||||||||.|||||||||||||||||||.|||||||
+1               1549 CCTGGGCCCCAGAGGAAGCTGTGGAGCCAGAGGGCCCACCTTGACATCAA   1598
+
+1               1724 GGGAGGCGATCTCCTGCTGATTGGTGGTAGAGGCCAGAAAATTGCTCATT   1773
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1599 GGGAGGCGATCTCCTGCTGATTGGTGGTAGAGGCCAGAAAATTGCTCATT   1648
+
+1               1774 TGGGCCTTCAGTGGGTCGTCCACCTCCACATCGATGTCGTAACAGGCTGT   1823
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1649 TGGGCCTTCAGTGGGTCGTCCACCTCCACATCGATGTCGTAACAGGCTGT   1698
+
+1               1824 CTTCTTCTGGTCGTTAGGGTCGACACTGCAGGCAGCACATGGGGAGGGAA   1873
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1699 CTTCTTCTGGTCGTTAGGGTCGACACTGCAGGCAGCACATGGGGAGGGAA   1748
+
+1               1874 GGCACATAGCTGACTTCATCCTGCCCACCTGGGCCAAATCTGGGGCCCAT   1923
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1749 GGCACATAGCTGACTTCATCCTGCCCACCTGGGCCAAATCTGGGGCCCAT   1798
+
+1               1924 TCTCTGCACACACTCAGGGAAAAAGAAACCTGATGCTTTCTTTGGCTTTA   1973
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1799 TCTCTGCACACACTCAGGGAAAAAGAAACCTGATGCTTTCTTTGGCTTTA   1848
+
+1               1974 GTTCAAGCCAAGGGTGAATCTGCTCTTAGAAGAGCCTTCCTGTCCCCCTC   2023
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1849 GTTCAAGCCAAGGGTGAATCTGCTCTTAGAAGAGCCTTCCTGTCCCCCTC   1898
+
+1               2024 CTTGCATTTACCTAATGACATGGTTGATGACAATGGGGTCTGGATGCTGC   2073
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1899 CTTGCATTTACCTAATGACATGGTTGATGACAATGGGGTCTGGATGCTGC   1948
+
+1               2074 AGCAACCCTGCCAGCTTCATGGGAATCTCGGAGAAACGGAGTCGGCCACA   2123
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1949 AGCAACCCTGCCAGCTTCATGGGAATCTCGGAGAAACGGAGTCGGCCACA   1998
+
+1               2124 ACTGAAGATCTGGAGGAAATACGAAAGGCTCAGCGTTGGCTTGTGGGCAC   2173
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               1999 ACTGAAGATCTGGAGGAAATACGAAAGGCTCAGCGTTGGCTTGTGGGCAC   2048
+
+1               2174 AGTGGAGTGGACCATTCCAGGACCAGTGAGGGCAGCAGTCTGCAGGCTGT   2223
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2049 AGTGGAGTGGACCATTCCAGGACCAGTGAGGGCAGCAGTCTGCAGGCTGT   2098
+
+1               2224 GGCCAAGGAGTAGCCCAGCAGGCAAG-----GCAAGGGCTGAGAAAACAG   2268
+                     ||||||||||||||||||||||||||     |||||||||||||||||  
+1               2099 GGCCAAGGAGTAGCCCAGCAGGCAAGGCAAAGCAAGGGCTGAGAAAAC--   2146
+
+1               2269 GGGGGCTGGCATCTGGCTAACCTGGCGGAAGTAACGGTTGCAGTTGATGT   2318
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2147 GGGGGCTGGCATCTGGCTAACCTGGCGGAAGTAACGGTTGCAGTTGATGT   2196
+
+1               2319 ACTCCCGCTCGTGCCCATCCTGCAGCTGGTTGTGCTTGATGTAAAGCCAC   2368
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2197 ACTCCCGCTCGTGCCCATCCTGCAGCTGGTTGTGCTTGATGTAAAGCCAC   2246
+
+1               2369 AGGGCCTGCATGATGGCGGCCCTCGTCTGCGTGTGCACTCCCAGCAGCCT   2418
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2247 AGGGCCTGCATGATGGCGGCCCTCGTCTGCGTGTGCACTCCCAGCAGCCT   2296
+
+1               2419 TGCCAATCGGGGGTCTAATTTGTACTGGGGAGGCTGGAGTTGGATGGAGG   2468
+                     |||||||||||||||.||||||||||||||||||||||||||||||||||
+1               2297 TGCCAATCGGGGGTCCAATTTGTACTGGGGAGGCTGGAGTTGGATGGAGG   2346
+
+1               2469 GGAGTCAGAACGGGTTCTTATAGTAAAACAGTGGGAAAACAGGGCAGGGA   2518
+                     |||||||||||||||||||||||||.|||||||||||||.||||||||||
+1               2347 GGAGTCAGAACGGGTTCTTATAGTAGAACAGTGGGAAAATAGGGCAGGGA   2396
+
+1               2519 CAGGAAGGGTTTCTAGGAACCAGCTCCCCTCCTGAGGGGTCCCTGTGGGC   2568
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2397 CAGGAAGGGTTTCTAGGAACCAGCTCCCCTCCTGAGGGGTCCCTGTGGGC   2446
+
+1               2569 CCAGAAATGACCCCAGGGCCTCTGTCACCTGATGATCCAGCATGAGCAGG   2618
+                     ||||||||||||||||||.|||||||||||||||||||||||||||||||
+1               2447 CCAGAAATGACCCCAGGGTCTCTGTCACCTGATGATCCAGCATGAGCAGG   2496
+
+1               2619 AGGGTGCACTTGACGTTGAGGTCTCCAGGCCGTTTTACTTGGAAGCCATC   2668
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2497 AGGGTGCACTTGACGTTGAGGTCTCCAGGCCGTTTTACTTGGAAGCCATC   2546
+
+1               2669 TGTCTCCTGGGTGGTGGGCATCCGGTGCCACTGGCAGGGAGGGAAGCATG   2718
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2547 TGTCTCCTGGGTGGTGGGCATCCGGTGCCACTGGCAGGGAGGGAAGCATG   2596
+
+1               2719 GCTTATCACCAAGGGGGTGGGCGTGAACACAGGGCCTCCCAAGGGCCCTG   2768
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2597 GCTTATCACCAAGGGGGTGGGCGTGAACACAGGGCCTCCCAAGGGCCCTG   2646
+
+1               2769 AGGCCATTTCCCTGCCAAACCTGCACATCAGCCTGCTTCTGCCCCAGGCC   2818
+                     ||||||||||||||||||||||||||||||||||||||.|||||||||||
+1               2647 AGGCCATTTCCCTGCCAAACCTGCACATCAGCCTGCTTTTGCCCCAGGCC   2696
+
+1               2819 CACTCTCACCTCCACCAGGTGATTGTCAGGCCCGTACAGCTCCTTGTCCA   2868
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2697 CACTCTCACCTCCACCAGGTGATTGTCAGGCCCGTACAGCTCCTTGTCCA   2746
+
+1               2869 GCTCAATGACGAGGCTCTTAAAGAATGAAGAAAACTTCCTCTTCTGTTTG   2918
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2747 GCTCAATGACGAGGCTCTTAAAGAATGAAGAAAACTTCCTCTTCTGTTTG   2796
+
+1               2919 CTAGGCTGGGGATGGAAAGGGGTGTGAGATGGTGCTGCTGAGCTCTCAAA   2968
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2797 CTAGGCTGGGGATGGAAAGGGGTGTGAGATGGTGCTGCTGAGCTCTCAAA   2846
+
+1               2969 TCTCAAGCTATGCTAAATCCCAAGAAAGAGAAGCCCCATTTCAGCCCTGG   3018
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2847 TCTCAAGCTATGCTAAATCCCAAGAAAGAGAAGCCCCATTTCAGCCCTGG   2896
+
+1               3019 AGCTCCGGGTACTGAAGATTCCTGGGCCCTGAAGGATGGAAGCAGGACTC   3068
+                     ||||||||.|||||||||||||||||||||||||||||||||||||||||
+1               2897 AGCTCCGGATACTGAAGATTCCTGGGCCCTGAAGGATGGAAGCAGGACTC   2946
+
+1               3069 TGGGCAGACTGGAGGCAGGGAAATGGTGCCCTCTTGCAGCCCACGAGGGA   3118
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               2947 TGGGCAGACTGGAGGCAGGGAAATGGTGCCCTCTTGCAGCCCACGAGGGA   2996
+
+1               3119 CTTCCTCGAGACACTCGACTGCCATCTGCAGGAACATTGTAATAACCACA   3168
+                     ||||||||||||||||||||||||||||||||||||.|||||||||||||
+1               2997 CTTCCTCGAGACACTCGACTGCCATCTGCAGGAACACTGTAATAACCACA   3046
+
+1               3169 CAAATCAACCTCCAACGGGCTTGGAGCAGCGCCCCCCTCCCTATGGCAGG   3218
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3047 CAAATCAACCTCCAACGGGCTTGGAGCAGCGCCCCCCTCCCTATGGCAGG   3096
+
+1               3219 ACTTCTCTGGGAGTGCCCAAGTGTCTGGCCCAGTCTTTTTTTTTTCTGAG   3268
+                     |||||||||||||.||||||||||||||||||||| ||||||||||||||
+1               3097 ACTTCTCTGGGAGCGCCCAAGTGTCTGGCCCAGTC-TTTTTTTTTCTGAG   3145
+
+1               3269 ACACAATCTCACTCTGTCACCCAGGCTGAAGTGCAGTGGTGTGATCATAA   3318
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3146 ACACAATCTCACTCTGTCACCCAGGCTGAAGTGCAGTGGTGTGATCATAA   3195
+
+1               3319 CTCACTGAAGCTCGACCTCCTGGGCTCAAGCCATCCTCCTGCATCAGCCT   3368
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3196 CTCACTGAAGCTCGACCTCCTGGGCTCAAGCCATCCTCCTGCATCAGCCT   3245
+
+1               3369 TATGAGTAGCTGGGACTACAGGCGCATGCCACCACACCCAGCTAATTTTT   3418
+                     ||||||||||||||||||||||.||||||||||.||||||||||||||||
+1               3246 TATGAGTAGCTGGGACTACAGGTGCATGCCACCGCACCCAGCTAATTTTT   3295
+
+1               3419 AAATTTTTTGTAGAGATGGGGTCTGGCTCTGCTGCTCAGGCTAGTATCAA   3468
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3296 AAATTTTTTGTAGAGATGGGGTCTGGCTCTGCTGCTCAGGCTAGTATCAA   3345
+
+1               3469 ACTCCTTGGTCTCAGTCTTAAACCCACACAGGCCTCCTTCCCTCCAGAAC   3518
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3346 ACTCCTTGGTCTCAGTCTTAAACCCACACAGGCCTCCTTCCCTCCAGAAC   3395
+
+1               3519 CTCCCTCCCCAACTCACATCATCCAGCAGTTTTCCTTCCACTCGGAGTTC   3568
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3396 CTCCCTCCCCAACTCACATCATCCAGCAGTTTTCCTTCCACTCGGAGTTC   3445
+
+1               3569 CCAGGAAGCCACCTTGTCCCCTGCTGGGGTTCCCCCAGGGGTCCCTGCAG   3618
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3446 CCAGGAAGCCACCTTGTCCCCTGCTGGGGTTCCCCCAGGGGTCCCTGCAG   3495
+
+1               3619 TTCCTGCACTATCGCCTTCCGCCTTGCTGGGACTGAACGTATTGGAAATG   3668
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3496 TTCCTGCACTATCGCCTTCCGCCTTGCTGGGACTGAACGTATTGGAAATG   3545
+
+1               3669 TAGATCCGAAGCTTTCGCTTTTGCTAAAGAGAGAAAGGCAATCACAACTG   3718
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3546 TAGATCCGAAGCTTTCGCTTTTGCTAAAGAGAGAAAGGCAATCACAACTG   3595
+
+1               3719 GAGGTGGACCAAGATGCTGGGACACAGTGCTACCGCATCTTCTCATATGA   3768
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3596 GAGGTGGACCAAGATGCTGGGACACAGTGCTACCGCATCTTCTCATATGA   3645
+
+1               3769 ACCATTCAACAATCAGTACTGAGCACCATGAGCCAGCCAGGCACCTTGTC   3818
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3646 ACCATTCAACAATCAGTACTGAGCACCATGAGCCAGCCAGGCACCTTGTC   3695
+
+1               3819 AGGTACTGGGAATCAGAAGTAGTAAGTCCCAGTCCCAGCCTTTTTTTTTT   3868
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3696 AGGTACTGGGAATCAGAAGTAGTAAGTCCCAGTCCCAGCCTTTTTTTTTT   3745
+
+1               3869 TTAGACATGGTCTCACTCTGTCACCCAGGCTGGAGTGCAGTGGCGCGATC   3918
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3746 TTAGACATGGTCTCACTCTGTCACCCAGGCTGGAGTGCAGTGGCGCGATC   3795
+
+1               3919 TCAGCTCACTTGCAACCTCTGACTCCCAGGTTCAAGCGATTCTCTTGCCT   3968
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3796 TCAGCTCACTTGCAACCTCTGACTCCCAGGTTCAAGCGATTCTCTTGCCT   3845
+
+1               3969 CAGTCTCCCGAGTAGCTGGGACTACAGGTGCGCACCACCATGCCCAGCTA   4018
+                     |||||||||..|||||||||||||||||||||||||||||||||||||||
+1               3846 CAGTCTCCCATGTAGCTGGGACTACAGGTGCGCACCACCATGCCCAGCTA   3895
+
+1               4019 ATTTTTTGTGTTTTTAGTAAAGACGGTATTTCAACATGTTGGCCATGCTG   4068
+                     ||||||||||||||| |||||||.||||||||||||||||||||||||||
+1               3896 ATTTTTTGTGTTTTT-GTAAAGATGGTATTTCAACATGTTGGCCATGCTG   3944
+
+1               4069 GTCTCAAACTCCTGACCTCAGGTGATCTGCCCACTTCGGCCTCCTAAAGT   4118
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               3945 GTCTCAAACTCCTGACCTCAGGTGATCTGCCCACTTCGGCCTCCTAAAGT   3994
+
+1               4119 GCTGAGATTACAGGCATGAGCCACCGCACCCGGCCGGAACTCACCATTTT   4168
+                     ||||||||||||||..||||||||||||||.|||||||||||||||||||
+1               3995 GCTGAGATTACAGGTGTGAGCCACCGCACCTGGCCGGAACTCACCATTTT   4044
+
+1               4169 ATGGGGAAAGAGATGCATCACCAACAATGCCAGCACAGTGGGACTGGTGC   4218
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4045 ATGGGGAAAGAGATGCATCACCAACAATGCCAGCACAGTGGGACTGGTGC   4094
+
+1               4219 TATGGCATGACGGAGTAACACACAGCCAGTCTCTGGCTCACATCTTACAT   4268
+                     ||.|||||||.||||||||||.||||||||||||||||||||||||||||
+1               4095 TACGGCATGATGGAGTAACACGCAGCCAGTCTCTGGCTCACATCTTACAT   4144
+
+1               4269 GAAACCCAAACACCCATCACGGCTCCAAAATATCCTAGTCCCCTGGAAAG   4318
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4145 GAAACCCAAACACCCATCACGGCTCCAAAATATCCTAGTCCCCTGGAAAG   4194
+
+1               4319 GCTTCACCACTCGGGACTGTTCTACATTATTATTAAGAAAAGCTTCTCGG   4368
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4195 GCTTCACCACTCGGGACTGTTCTACATTATTATTAAGAAAAGCTTCTCGG   4244
+
+1               4369 CTGGGTGCAGTGGCTCACGCCTGTAATCTCAGCACTTTGGGAGGCCGAGG   4418
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4245 CTGGGTGCAGTGGCTCACGCCTGTAATCTCAGCACTTTGGGAGGCCGAGG   4294
+
+1               4419 CAGTCAGGAGTTCGAGACCAGCCTGGGTAACATGGCGATACTAAAAATAC   4468
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4295 CAGTCAGGAGTTCGAGACCAGCCTGGGTAACATGGCGATACTAAAAATAC   4344
+
+1               4469 AAAAATTAGCCGGGCGTGGTGACAGGCATCTGTAATCCTAGTTACTCGGG   4518
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4345 AAAAATTAGCCGGGCGTGGTGACAGGCATCTGTAATCCTAGTTACTCGGG   4394
+
+1               4519 AGGCTGAGGC---AAGAATTGCTTGAACCTGGGATGCGAAGGTTGCAGTG   4565
+                     ||||||||||   |||||||.|||||||||||||||||||||||||||||
+1               4395 AGGCTGAGGCAAGAAGAATTACTTGAACCTGGGATGCGAAGGTTGCAGTG   4444
+
+1               4566 AGCCGAGATCGCAACACTGCACTCCAGCTTAGGTGAAAGAGCGAGACTCC   4615
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4445 AGCCGAGATCGCAACACTGCACTCCAGCTTAGGTGAAAGAGCGAGACTCC   4494
+
+1               4616 ATCTCGGAAAAAAAAAAAAAGAAAGAAAACA----TTCTCTATGGATGGG   4661
+                     |||||.||||||||||||||.|||.||||.|    |||||||||||||||
+1               4495 ATCTCAGAAAAAAAAAAAAAAAAAAAAAAGAAAATTTCTCTATGGATGGG   4544
+
+1               4662 GAAGGGGAAGGAGAAAGGAACTACCTTTATCCCCTAGTCTAGTGGTTTTC   4711
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4545 GAAGGGGAAGGAGAAAGGAACTACCTTTATCCCCTAGTCTAGTGGTTTTC   4594
+
+1               4712 AAACTTTTGACCACCACCCATAAGATTTACATTTTCAATTATGATCCAAG   4761
+                     ||||||||||||||||||||||||||||||||||||||||||||.|||||
+1               4595 AAACTTTTGACCACCACCCATAAGATTTACATTTTCAATTATGACCCAAG   4644
+
+1               4762 GTCTGCATATCTATTTATCAGAAACAAAAATGTCATGAAAGAATCCATTT   4811
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4645 GTCTGCATATCTATTTATCAGAAACAAAAATGTCATGAAAGAATCCATTT   4694
+
+1               4812 ACTACTATGTTAAGTACTACTGTGAAGTATTTTAAGATTTTCTACTGTCA   4861
+                     |||||||||.||||||||||||||||||||||||||||||||||||||||
+1               4695 ACTACTATGGTAAGTACTACTGTGAAGTATTTTAAGATTTTCTACTGTCA   4744
+
+1               4862 TATATTCATTTAAAACATACTGGCCCCAACACATTCAACTGAGTTCGTAC   4911
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4745 TATATTCATTTAAAACATACTGGCCCCAACACATTCAACTGAGTTCGTAC   4794
+
+1               4912 TCTACTAGTGGGCTGCATCCTGCATGTGAAAAACCCGGCTCTAGCCCAAC   4961
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4795 TCTACTAGTGGGCTGCATCCTGCATGTGAAAAACCCGGCTCTAGCCCAAC   4844
+
+1               4962 TTGCTTGGCCCCTGGAAAACAAGGGGGTGGAGGGCAAGGAAACCTGGGAA   5011
+                     |||||||||||||||||||||||||||||||.||||||||||||||||||
+1               4845 TTGCTTGGCCCCTGGAAAACAAGGGGGTGGAAGGCAAGGAAACCTGGGAA   4894
+
+1               5012 GGCTAGAGGTGGTCAGGGCCACACATACCGTCAGAGGCTTTTTGATGGCC   5061
+                     ||||||||||||||||||||||||||||.|||||||||||||||||||||
+1               4895 GGCTAGAGGTGGTCAGGGCCACACATACTGTCAGAGGCTTTTTGATGGCC   4944
+
+1               5062 TCCTGGATCTCCATCCGCTTGCGAGCAATGGTCTGGTCCAGCTTCCGCTC   5111
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4945 TCCTGGATCTCCATCCGCTTGCGAGCAATGGTCTGGTCCAGCTTCCGCTC   4994
+
+1               5112 AAAAGCCAAGAGATCCATGTACGCCTGAGACTCTGGAACAAGCTCCCGGA   5161
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               4995 AAAAGCCAAGAGATCCATGTACGCCTGAGACTCTGGAACAAGCTCCCGGA   5044
+
+1               5162 TCTGAAGGAAGGTAGCAGAAGCTCATCAGCTTGCTTCAGCCAAAGCCTGG   5211
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5045 TCTGAAGGAAGGTAGCAGAAGCTCATCAGCTTGCTTCAGCCAAAGCCTGG   5094
+
+1               5212 CTCTTTCCTCCCTTCCTGCTGCAGCCCAGCGTTGAGAGAGATGGACACCC   5261
+                     ||||||||||||||||||||||||||||||.|||||||||||||||||||
+1               5095 CTCTTTCCTCCCTTCCTGCTGCAGCCCAGCTTTGAGAGAGATGGACACCC   5144
+
+1               5262 ACCCCAAGGTGGCCACTGGGCAGGCCTCCCAGGTGTCCTCTTAACACTTA   5311
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5145 ACCCCAAGGTGGCCACTGGGCAGGCCTCCCAGGTGTCCTCTTAACACTTA   5194
+
+1               5312 CTCGCTGAGGTAGAACCTTATCTGCCATCTTCCTCCTCTTTAACCTGGGG   5361
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5195 CTCGCTGAGGTAGAACCTTATCTGCCATCTTCCTCCTCTTTAACCTGGGG   5244
+
+1               5362 AGGACAGAAACCCACTTAAGAGGTCAATGGTCCAAAAAAGGACACTCACT   5411
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5245 AGGACAGAAACCCACTTAAGAGGTCAATGGTCCAAAAAAGGACACTCACT   5294
+
+1               5412 CCCATAATGCCCCTCCAGTCTCCAGGACCCTCTCCCCCAGGAGAGCCTGG   5461
+                     |||||||.||||||||||||||||||||||||||||||||||||||||||
+1               5295 CCCATAACGCCCCTCCAGTCTCCAGGACCCTCTCCCCCAGGAGAGCCTGG   5344
+
+1               5462 AGTCATCCTCAGTCACCAAAGCTCTTAAGATAGAAGGAAACCCTCTGCTA   5511
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5345 AGTCATCCTCAGTCACCAAAGCTCTTAAGATAGAAGGAAACCCTCTGCTA   5394
+
+1               5512 CCACCAGAGCTGAGTTAGGCAGAGTGAGAGAAGCAGGATGCTCTTACCCC   5561
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5395 CCACCAGAGCTGAGTTAGGCAGAGTGAGAGAAGCAGGATGCTCTTACCCC   5444
+
+1               5562 CGGCGCTGGGCAGGCATGGGAGGCTGCGCCTGGGGCACAAGCAGGCGTTT   5611
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5445 CGGCGCTGGGCAGGCATGGGAGGCTGCGCCTGGGGCACAAGCAGGCGTTT   5494
+
+1               5612 TCGGAATGGATCCATCATGGTGGGTGGCATGCCAGGTCGAAGCGGAGCTG   5661
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5495 TCGGAATGGATCCATCATGGTGGGTGGCATGCCAGGTCGAAGCGGAGCTG   5544
+
+1               5662 CTGCACCAAATGGGGAGCCAGCAGGGGGTCCCACCTGCAAGCCAGCCATG   5711
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5545 CTGCACCAAATGGGGAGCCAGCAGGGGGTCCCACCTGCAAGCCAGCCATG   5594
+
+1               5712 GGCATCCGGTTCCCTGGTGACATGCCAGGTCGCTGGGGGAAGTGAGCCAA   5761
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5595 GGCATCCGGTTCCCTGGTGACATGCCAGGTCGCTGGGGGAAGTGAGCCAA   5644
+
+1               5762 TGGGGGTGCATAGGTCAGGGGCAAGGCCCTCCGGGACCCATAGCCCATGC   5811
+                     .|||||||||||||||||||||||||||||||||||||||||||||||||
+1               5645 CGGGGGTGCATAGGTCAGGGGCAAGGCCCTCCGGGACCCATAGCCCATGC   5694
+
+1               5812 CCTCCATCCCTCTCGTCAGCCAGGTAGGGCCTGAGCAGCACACCAGAGCC   5861
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5695 CCTCCATCCCTCTCGTCAGCCAGGTAGGGCCTGAGCAGCACACCAGAGCC   5744
+
+1               5862 CTGTTGGAGCCCCAGGAACAAAGGGGAGTGGGCGCCTGAGCACAGAGTGT   5911
+                     |||.||||||||||||||||||||||||||||||||||||||||||||||
+1               5745 CTGCTGGAGCCCCAGGAACAAAGGGGAGTGGGCGCCTGAGCACAGAGTGT   5794
+
+1               5912 AAACCACACCTGCCCCGCCCCCTGCAACCGCCCTGGCAGCCATGCCAGCG   5961
+                     |||||||||||||||.||||||||||||||||||||||||||||||||||
+1               5795 AAACCACACCTGCCCTGCCCCCTGCAACCGCCCTGGCAGCCATGCCAGCG   5844
+
+1               5962 AATGAGGCCTGCCAGAACCTGGGCTGGGAGGAGGGTCCTGCCTGCAGAGG   6011
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5845 AATGAGGCCTGCCAGAACCTGGGCTGGGAGGAGGGTCCTGCCTGCAGAGG   5894
+
+1               6012 GAAGGGCCTTGGGGAGCTTTTCAGGGCCCATTGCTACCTTCCAGCCCCAG   6061
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5895 GAAGGGCCTTGGGGAGCTTTTCAGGGCCCATTGCTACCTTCCAGCCCCAG   5944
+
+1               6062 CATGCTGTGCCCTATTCCCTGGACAAGCTGGTCCCTATTCTCTCAGACAG   6111
+                     ||||||||||||||||||||||.|||||||||||||||||||||||||||
+1               5945 CATGCTGTGCCCTATTCCCTGGGCAAGCTGGTCCCTATTCTCTCAGACAG   5994
+
+1               6112 TCCTGCCAAGCCCTGCCCTCCTTCTCTTTCTCCCATCATGAAGAAGAAGC   6161
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               5995 TCCTGCCAAGCCCTGCCCTCCTTCTCTTTCTCCCATCATGAAGAAGAAGC   6044
+
+1               6162 ATGGCTGAGAGGCACAGGGGCAGTGTCACTGCCAGGCAGAGGAGTGTACT   6211
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6045 ATGGCTGAGAGGCACAGGGGCAGTGTCACTGCCAGGCAGAGGAGTGTACT   6094
+
+1               6212 ATAGTATGAGTAGGCCAATGGCGCAGAGCCCCGATCCCCATCCTCTGTGG   6261
+                     ||||||||||||||||||||||||||||||||.|||||||||||||||||
+1               6095 ATAGTATGAGTAGGCCAATGGCGCAGAGCCCCAATCCCCATCCTCTGTGG   6144
+
+1               6262 CCGAGGGAGAAAGGGGTCTGGTAGGCAGCAGCACCCCAAGTGAGCAGGGC   6311
+                     ||||||||||||||||||||||||||||||||||||||.|||||||||||
+1               6145 CCGAGGGAGAAAGGGGTCTGGTAGGCAGCAGCACCCCAGGTGAGCAGGGC   6194
+
+1               6312 TGCAACAGGATGGCTTGGAACGTGTACCAGCTGGTGGGGGTGGCCTCGGG   6361
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6195 TGCAACAGGATGGCTTGGAACGTGTACCAGCTGGTGGGGGTGGCCTCGGG   6244
+
+1               6362 CAGGGTACAGGGACCCTGTACCCTGTAGTCTGGTATCACATAGCCCCCAC   6411
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6245 CAGGGTACAGGGACCCTGTACCCTGTAGTCTGGTATCACATAGCCCCCAC   6294
+
+1               6412 CCACAGCCCAGAACTGGACCCTCCTCTTACCTCCCTACTGCCCAACTACT   6461
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6295 CCACAGCCCAGAACTGGACCCTCCTCTTACCTCCCTACTGCCCAACTACT   6344
+
+1               6462 ACCCCTATGACAGAAGACCCCAGAAGGGAAGCTATGGCTCCTGGGTGGCC   6511
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6345 ACCCCTATGACAGAAGACCCCAGAAGGGAAGCTATGGCTCCTGGGTGGCC   6394
+
+1               6512 TGTGGGAAAGAGAGCAGCTAGCACCTGGACTCTGCCAGTGGTCCAGGCAC   6561
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6395 TGTGGGAAAGAGAGCAGCTAGCACCTGGACTCTGCCAGTGGTCCAGGCAC   6444
+
+1               6562 CACCTGGCAGCCAGGACTGGCTCTGGCTCCGTGTAGCCCTGGCAATCCCA   6611
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6445 CACCTGGCAGCCAGGACTGGCTCTGGCTCCGTGTAGCCCTGGCAATCCCA   6494
+
+1               6612 AGCTGGAGAAGGGGGCTAAGATTATCCTGGGAGGCAAGGATAGAGGCCCA   6661
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6495 AGCTGGAGAAGGGGGCTAAGATTATCCTGGGAGGCAAGGATAGAGGCCCA   6544
+
+1               6662 GGCTGAGCAGCAGGAAAGTGGGAGACAGAAATAGCTTCTTTAGATGCCTG   6711
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6545 GGCTGAGCAGCAGGAAAGTGGGAGACAGAAATAGCTTCTTTAGATGCCTG   6594
+
+1               6712 CAGAAGGATTTCCCACCTGAGGCCTTGCTCCCTGACATTTCTGTGGAGCC   6761
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6595 CAGAAGGATTTCCCACCTGAGGCCTTGCTCCCTGACATTTCTGTGGAGCC   6644
+
+1               6762 CATCTGGGAGTCACCTCCACCCCCACCCGCCTCCCCATGGCTGCTGCCTG   6811
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6645 CATCTGGGAGTCACCTCCACCCCCACCCGCCTCCCCATGGCTGCTGCCTG   6694
+
+1               6812 CAAGGCCTGTTTGGCAGCTCTGCCTTGCACACACTGTCCCTGGCAGCTTC   6861
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6695 CAAGGCCTGTTTGGCAGCTCTGCCTTGCACACACTGTCCCTGGCAGCTTC   6744
+
+1               6862 ACAGGGCTGGCCCCAGGGCCCAGATTATGCAACGAGCACAACCAGCCAAC   6911
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6745 ACAGGGCTGGCCCCAGGGCCCAGATTATGCAACGAGCACAACCAGCCAAC   6794
+
+1               6912 CAAGCCCGGCAGGGTGGAGACTTGTACCAAATCAAAGGACCCTCCCGCAC   6961
+                     ||||||||||||||||||||||||||||||||||||||||||||||.|||
+1               6795 CAAGCCCGGCAGGGTGGAGACTTGTACCAAATCAAAGGACCCTCCCCCAC   6844
+
+1               6962 CCCAGCATCATGGAGATGAGATTCTTCCCCAACCTCTTCATCCCGCACTA   7011
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6845 CCCAGCATCATGGAGATGAGATTCTTCCCCAACCTCTTCATCCCGCACTA   6894
+
+1               7012 AACCCATGTTCCCAACACAGAGGGTCAGATTCTTGACCAGATGCGGAGAT   7061
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6895 AACCCATGTTCCCAACACAGAGGGTCAGATTCTTGACCAGATGCGGAGAT   6944
+
+1               7062 GGAAAGAAACATGACCCACAGACGTGAGGATGGGGAGAGGAGGAGCAGGG   7111
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               6945 GGAAAGAAACATGACCCACAGACGTGAGGATGGGGAGAGGAGGAGCAGGG   6994
+
+1               7112 TGGGAGGGAAGTGTTTGGGAGAATAAAAAGCTCAAAGTGGGGGGCTCTGG   7161
+                     |||||.||||||||||||||||||||||||.|||||||||||||||||||
+1               6995 TGGGACGGAAGTGTTTGGGAGAATAAAAAGTTCAAAGTGGGGGGCTCTGG   7044
+
+1               7162 GGCTTTGGGAGTCCTGCCAAAGTCTCTCTGCATCAGGAAGAGATTAATCA   7211
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7045 GGCTTTGGGAGTCCTGCCAAAGTCTCTCTGCATCAGGAAGAGATTAATCA   7094
+
+1               7212 GAGCTGTTGAAAGACAAAAGACAGCCTCTTTCTCTGCCTTAAAGATTGTT   7261
+                     |||||||||||||.||||||||||||||||||||||||||||||||||||
+1               7095 GAGCTGTTGAAAGGCAAAAGACAGCCTCTTTCTCTGCCTTAAAGATTGTT   7144
+
+1               7262 CTTTCTCTGGCCTGAGATTATAGAAAAAAACTAAGTGTGGCTACAGCTGT   7311
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7145 CTTTCTCTGGCCTGAGATTATAGAAAAAAACTAAGTGTGGCTACAGCTGT   7194
+
+1               7312 AAGCCCAGGCCCAGACATCCCAGACTAGTTTTTCCTAGTGCCTGAGACAA   7361
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7195 AAGCCCAGGCCCAGACATCCCAGACTAGTTTTTCCTAGTGCCTGAGACAA   7244
+
+1               7362 AGACAGGGAAGAACTGAAGCAGTGGGTCCTGCAGAGGTGAGCGAGGGCCC   7411
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7245 AGACAGGGAAGAACTGAAGCAGTGGGTCCTGCAGAGGTGAGCGAGGGCCC   7294
+
+1               7412 TGTGGTCCCCAGGAAGCTCCCTGCTGCAGTGTTCACAAAACCTGCAGCAC   7461
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7295 TGTGGTCCCCAGGAAGCTCCCTGCTGCAGTGTTCACAAAACCTGCAGCAC   7344
+
+1               7462 TACCCATCCCTCCTGGGCAGGTGCTCCGGTAACAGGAAGTCCCAAGACAA   7511
+                     .|||||||||||||||||||||||||||||||||||||||||||||||||
+1               7345 CACCCATCCCTCCTGGGCAGGTGCTCCGGTAACAGGAAGTCCCAAGACAA   7394
+
+1               7512 GGCCTCATAGGCAGGGTCTGGAATAGGCTCCACCCAGACATCTGCTCCAG   7561
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7395 GGCCTCATAGGCAGGGTCTGGAATAGGCTCCACCCAGACATCTGCTCCAG   7444
+
+1               7562 GTTTCCTGGGCCCAGAGCCCCTGGCTCACTCAGGGCCCCAGGGGAAGGCT   7611
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7445 GTTTCCTGGGCCCAGAGCCCCTGGCTCACTCAGGGCCCCAGGGGAAGGCT   7494
+
+1               7612 GCTTATAGTTCAAGTCCCAGCTGAGCCTTGCCAAGCTCCATAGGGCTTAT   7661
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7495 GCTTATAGTTCAAGTCCCAGCTGAGCCTTGCCAAGCTCCATAGGGCTTAT   7544
+
+1               7662 AGGCGCTAGCAACTCCTCCCACTTCAAAAAACAAAACAAAACAAAACAAA   7711
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7545 AGGCGCTAGCAACTCCTCCCACTTCAAAAAACAAAACAAAACAAAACAAA   7594
+
+1               7712 CAAAAAAAAAACAACTCAGGAGTTAAAGAAAAAAAAAAAAAGCAGTCCAG   7761
+                     | |||||||||||||||||||||||||| |||||||||||||||||||||
+1               7595 C-AAAAAAAAACAACTCAGGAGTTAAAG-AAAAAAAAAAAAGCAGTCCAG   7642
+
+1               7762 CACTCTGAGCCTCCCTAACTCCCTGCCTGCAGCAGGACCAGGTAGGCCTG   7811
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7643 CACTCTGAGCCTCCCTAACTCCCTGCCTGCAGCAGGACCAGGTAGGCCTG   7692
+
+1               7812 GATCAATCCCCTGAACCCCAGATGAGGAATCCAGGGCTCCGGTGAGCATG   7861
+                     |||||||||||||||||||||||||||||||||||||||||||||||.||
+1               7693 GATCAATCCCCTGAACCCCAGATGAGGAATCCAGGGCTCCGGTGAGCGTG   7742
+
+1               7862 CTTTGCCCTGCCCCAAATGTGGCCCTGATGCTCCTGGAACCTGGGCCTGA   7911
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7743 CTTTGCCCTGCCCCAAATGTGGCCCTGATGCTCCTGGAACCTGGGCCTGA   7792
+
+1               7912 GGGCCTCAGTTGGGGAACATACCACCCACTCTCCCATGAGTAAAAAGGAT   7961
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7793 GGGCCTCAGTTGGGGAACATACCACCCACTCTCCCATGAGTAAAAAGGAT   7842
+
+1               7962 TTTGAGGCCGGGTGCAGTGTCTCACGCCCATAATCCCAGCACTTTGGGAG   8011
+                     |||||||||||||||||||.||||||||.|||||||||||||||||||||
+1               7843 TTTGAGGCCGGGTGCAGTGGCTCACGCCTATAATCCCAGCACTTTGGGAG   7892
+
+1               8012 GCCGAGGCGGGTGGATCACAAGGTCAGGAGTTCAAGACCATCCTGGCCAA   8061
+                     |||||||||||||||||||||||||||||||||.||||||||||||||||
+1               7893 GCCGAGGCGGGTGGATCACAAGGTCAGGAGTTCGAGACCATCCTGGCCAA   7942
+
+1               8062 GATGGTGAAACCTCGTCTCTACTAAAAATACAAAAAAATTAGCCGGGCGT   8111
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               7943 GATGGTGAAACCTCGTCTCTACTAAAAATACAAAAAAATTAGCCGGGCGT   7992
+
+1               8112 GGTGGTGGGCACCTGTAATCCCAGCTACTCAGGAGGC-TGAGGCAGAGGA   8160
+                     ||||||||||.|||||||||||||||||||||||||| ||||||||||||
+1               7993 GGTGGTGGGCGCCTGTAATCCCAGCTACTCAGGAGGCTTGAGGCAGAGGA   8042
+
+1               8161 TTGTTTGAACCTGGGAGGCGGAGGTTGCAGTGAGCTGAGATCATGTCACT   8210
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8043 TTGTTTGAACCTGGGAGGCGGAGGTTGCAGTGAGCTGAGATCATGTCACT   8092
+
+1               8211 GCACTCCAGCCTGGGCGACAGAGTGAGACTCCGTATCAGAAAAAAAAAAA   8260
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8093 GCACTCCAGCCTGGGCGACAGAGTGAGACTCCGTATCAGAAAAAAAAAAA   8142
+
+1               8261 -TTTTTTTTTGAACTTTTTGAACTCTCTGGAGTGAACCCAGCAATCTGAG   8309
+                      |||||||||||||||||||||||||||||||||||||||||||||||||
+1               8143 TTTTTTTTTTGAACTTTTTGAACTCTCTGGAGTGAACCCAGCAATCTGAG   8192
+
+1               8310 GTTTTTGTTATTTTGTTGCCCAGGCTGGAGTGCAGTGGCAGGATCATAGC   8359
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8193 GTTTTTGTTATTTTGTTGCCCAGGCTGGAGTGCAGTGGCAGGATCATAGC   8242
+
+1               8360 TCAATGCAGCCTTGAACTCCTGGACTCAAGCAATCCTCCTGCCACAGCAT   8409
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8243 TCAATGCAGCCTTGAACTCCTGGACTCAAGCAATCCTCCTGCCACAGCAT   8292
+
+1               8410 CCTGAGTAGCTGGGACCATAAGCGCACACCACCGCGCTTGGCTAAATTTT   8459
+                     |||||||||||||||||||||||||||||||||..|||||||||||  ||
+1               8293 CCTGAGTAGCTGGGACCATAAGCGCACACCACCATGCTTGGCTAAA--TT   8340
+
+1               8460 TTTTTTTTTTTTTTTAAGAGATGATGGTCTCACTATGTTGCTTAGGCTGG   8509
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8341 TTTTTTTTTTTTTTTAAGAGATGATGGTCTCACTATGTTGCTTAGGCTGG   8390
+
+1               8510 TCTTGAACTCCTGGTCTCAAGTAATC---CTGTCTGGGCCTCCCAAAGTG   8556
+                     ||||||||||||||||||||||||||   |||||||||||||||||||||
+1               8391 TCTTGAACTCCTGGTCTCAAGTAATCCTTCTGTCTGGGCCTCCCAAAGTG   8440
+
+1               8557 CTAGGATTACAGGTGTGAGCCCACCACATCCTGCCCTGGAGGTCTTTTTC   8606
+                     ||||||||||||||||||||||||||.||||||||||||||||.||||||
+1               8441 CTAGGATTACAGGTGTGAGCCCACCATATCCTGCCCTGGAGGTTTTTTTC   8490
+
+1               8607 TTTTCTTTTTCTTTTTTTAGGTTCCTCTGTTAACTGTGATCCACAGCTAG   8656
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8491 TTTTCTTTTTCTTTTTTTAGGTTCCTCTGTTAACTGTGATCCACAGCTAG   8540
+
+1               8657 AACCACCCTCTGGAGGAAGGGAGGTCATCACTTCCCTTCTTTCAACTATT   8706
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8541 AACCACCCTCTGGAGGAAGGGAGGTCATCACTTCCCTTCTTTCAACTATT   8590
+
+1               8707 TGCTCAGCTTGGGCCTCAAATTCTCGCTTTTCAAGTGCATCTCATGAGCC   8756
+                     |||||||||||||||||||||||||.||||||||||||||||||||||||
+1               8591 TGCTCAGCTTGGGCCTCAAATTCTCACTTTTCAAGTGCATCTCATGAGCC   8640
+
+1               8757 CTAACAGACAGGAACCCCTTTGTTTCCCAGATCTCAAGTCCCTTCTCCTG   8806
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8641 CTAACAGACAGGAACCCCTTTGTTTCCCAGATCTCAAGTCCCTTCTCCTG   8690
+
+1               8807 GCAGTCATACAACTGGACTTGGAAAGAAGGCAAGTAGGATCCTCTTCAAA   8856
+                     |||||||||||||||||||||||||||||||||.||||||||||||||||
+1               8691 GCAGTCATACAACTGGACTTGGAAAGAAGGCAAATAGGATCCTCTTCAAA   8740
+
+1               8857 CTCAGCCAAAGTTAGCTGGCTGGGTTCTCCTTCCCATCTACCTCTCCTGC   8906
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8741 CTCAGCCAAAGTTAGCTGGCTGGGTTCTCCTTCCCATCTACCTCTCCTGC   8790
+
+1               8907 CAGGAGGAGGAAAGCTAGTGGGATGGGAAACCCAGACTCAGGGCCATCTC   8956
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8791 CAGGAGGAGGAAAGCTAGTGGGATGGGAAACCCAGACTCAGGGCCATCTC   8840
+
+1               8957 CTACTTCCGCACAGCTAGCAGCCCAGGCCTAACCAGCCAGCCAGCTTGGC   9006
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8841 CTACTTCCGCACAGCTAGCAGCCCAGGCCTAACCAGCCAGCCAGCTTGGC   8890
+
+1               9007 CTTGCCACAGGCCCAAGGCCACCCCCCACCAAAACATGTGGAATCCATCC   9056
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8891 CTTGCCACAGGCCCAAGGCCACCCCCCACCAAAACATGTGGAATCCATCC   8940
+
+1               9057 TCTCAGGGGCTGTCCCAAGGGCACATTTCCTATGGCTTGCATGCCAAGGA   9106
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8941 TCTCAGGGGCTGTCCCAAGGGCACATTTCCTATGGCTTGCATGCCAAGGA   8990
+
+1               9107 AACTGGAGCGGCTTGTCTGTTCCAGGTCCTTCCAAGGCCAAAGGCCCACA   9156
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               8991 AACTGGAGCGGCTTGTCTGTTCCAGGTCCTTCCAAGGCCAAAGGCCCACA   9040
+
+1               9157 GATGGTGCCCAGGCCAGGTCTCAGTGGGCAGGCCCAAGGGCTACAATGAA   9206
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9041 GATGGTGCCCAGGCCAGGTCTCAGTGGGCAGGCCCAAGGGCTACAATGAA   9090
+
+1               9207 TGATGCAGGGAGCCCTCAGCAACACCCTGGGCCCATGAATCCCCAAGGGG   9256
+                     ||||||||||||||||||||||||||||||||||||||||||||||.|||
+1               9091 TGATGCAGGGAGCCCTCAGCAACACCCTGGGCCCATGAATCCCCAACGGG   9140
+
+1               9257 GACAGCAAGGTGGGAGAGATGAGCCCCAGCTGGAATCCCTGGGACCAGGT   9306
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9141 GACAGCAAGGTGGGAGAGATGAGCCCCAGCTGGAATCCCTGGGACCAGGT   9190
+
+1               9307 CTGTCTCTGCCCATACCCAGACTCTGTTTTCTCTTGAGAAAGGAGGAAGA   9356
+                     |||||||||||||||||||||||||.||||||||||||||||||||||||
+1               9191 CTGTCTCTGCCCATACCCAGACTCTCTTTTCTCTTGAGAAAGGAGGAAGA   9240
+
+1               9357 ATGAGGAGTAAGAAGGAAAAAAAAATCCAGTCACTGTCCCTAGTTAAGCC   9406
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9241 ATGAGGAGTAAGAAGGAAAAAAAAATCCAGTCACTGTCCCTAGTTAAGCC   9290
+
+1               9407 ATCTCCTTAGAAGTGAGGGCCCAGTGGGGCAGGTAGGCTGTGTATACTCC   9456
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9291 ATCTCCTTAGAAGTGAGGGCCCAGTGGGGCAGGTAGGCTGTGTATACTCC   9340
+
+1               9457 ACGAGGATCCCTAAGGACCTCTGCCTGGAAACATGAGTCGAAAACAGAGG   9506
+                     |||||||||||||||||||||||||||||.||||||||||||||||||||
+1               9341 ACGAGGATCCCTAAGGACCTCTGCCTGGAGACATGAGTCGAAAACAGAGG   9390
+
+1               9507 AAGCCCACAGCAAACCCGTAGATGAGCAAGAAGCCAGTGTCAAATGCTTG   9556
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9391 AAGCCCACAGCAAACCCGTAGATGAGCAAGAAGCCAGTGTCAAATGCTTG   9440
+
+1               9557 GGCACATGGCTTCGGACGTGGTGGAGTTAGAACCTGAAGGCCAAATAAAA   9606
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9441 GGCACATGGCTTCGGACGTGGTGGAGTTAGAACCTGAAGGCCAAATAAAA   9490
+
+1               9607 ATGCAGAGAGGGTGACAAGGCAGATGGGCACAGTTTCCAAGCCCTCTGGG   9656
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9491 ATGCAGAGAGGGTGACAAGGCAGATGGGCACAGTTTCCAAGCCCTCTGGG   9540
+
+1               9657 GCAACCTGAACAGCATACTAGAGCACTGGCAGGGTCAGGCTGAGGTCCTC   9706
+                     |||||||||||||||.||||||||||||||||||||||||||||||||||
+1               9541 GCAACCTGAACAGCAGACTAGAGCACTGGCAGGGTCAGGCTGAGGTCCTC   9590
+
+1               9707 ACACACTGAGCAGAAGTCGCTGCTTTGCAAGGGCTTTTGAAGCTGCAATC   9756
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9591 ACACACTGAGCAGAAGTCGCTGCTTTGCAAGGGCTTTTGAAGCTGCAATC   9640
+
+1               9757 TGAGCAGCTCTCAAAACCCCAAAGGGGTCAGGACAGCACTCTTTGAAGCA   9806
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9641 TGAGCAGCTCTCAAAACCCCAAAGGGGTCAGGACAGCACTCTTTGAAGCA   9690
+
+1               9807 ACTCTCGCAGACTCCTCCGGCCCCAGACCAGCAGGGCTCCACTCTGCACG   9856
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9691 ACTCTCGCAGACTCCTCCGGCCCCAGACCAGCAGGGCTCCACTCTGCACG   9740
+
+1               9857 TCCAGACTAATCAACTCCCGGACACGATGACAGGAGGCAGAAAGCTCAGA   9906
+                     |||||||||||||||||||||||||||||||||||||||||||||.||||
+1               9741 TCCAGACTAATCAACTCCCGGACACGATGACAGGAGGCAGAAAGCCCAGA   9790
+
+1               9907 AGAGAGCCGGCCAGTGACTGGGCTGGGCCTCCCCTCAGGCCTGGCCACCA   9956
+                     ||||||||||||.||||||||||||||||||||||||||||.||||||||
+1               9791 AGAGAGCCGGCCTGTGACTGGGCTGGGCCTCCCCTCAGGCCAGGCCACCA   9840
+
+1               9957 CCGTCTCTGGTCTAAGCTGAAGTCCTCCCAGCGAAGGCGCCTGGCCCTGC  10006
+                     |||||||||||||||||||.||||||||||||||||||||||||||||||
+1               9841 CCGTCTCTGGTCTAAGCTGGAGTCCTCCCAGCGAAGGCGCCTGGCCCTGC   9890
+
+1              10007 CTCAGGAGTAAAGTCCGCCCGTGCACAAGCTGGAATCCCCTGGCCCTAGC  10056
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1               9891 CTCAGGAGTAAAGTCCGCCCGTGCACAAGCTGGAATCCCCTGGCCCTAGC   9940
+
+1              10057 CTCAGCGTCCCGTGCCCGTAGGAAGCCAGGCTCCTTCCTCCTCATTAGCA  10106
+                     |||||||||||||||||||.||||||||||||||||||||||.|||||||
+1               9941 CTCAGCGTCCCGTGCCCGTGGGAAGCCAGGCTCCTTCCTCCTTATTAGCA   9990
+
+1              10107 GCCGGGAGCCATCTCAGACACACTAGAGCTCCGCCAGTTCCCAACCAGAA  10156
+                     |||||||||||||||||||||.||||||||||||||||||||||.|||||
+1               9991 GCCGGGAGCCATCTCAGACACGCTAGAGCTCCGCCAGTTCCCAATCAGAA  10040
+
+1              10157 AAAACAGGGCAGACTTGAACTGGGACCAAGGCCGATGCAGGGTAACCCCG  10206
+                     |||||||||||||||||.||||||||||||||||||||||||||||||||
+1              10041 AAAACAGGGCAGACTTGGACTGGGACCAAGGCCGATGCAGGGTAACCCCG  10090
+
+1              10207 GTTTCTCAGCGAGGGCCCTTTCCCAAACTTTCTCATCACTTTCCAGCCCT  10256
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10091 GTTTCTCAGCGAGGGCCCTTTCCCAAACTTTCTCATCACTTTCCAGCCCT  10140
+
+1              10257 CCTACCCTAGACTTCTCAACCCACCCGCCACAATTCACTGGCTCCCCAAA  10306
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10141 CCTACCCTAGACTTCTCAACCCACCCGCCACAATTCACTGGCTCCCCAAA  10190
+
+1              10307 CTCCTCCATCTCCCAGTCACTCGGAATCCCTGTGCCGCGGAAGCCCCCAG  10356
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10191 CTCCTCCATCTCCCAGTCACTCGGAATCCCTGTGCCGCGGAAGCCCCCAG  10240
+
+1              10357 GCCTCCCAGCTGCTTCCAGCCCTCCGCTGCAGAACCTGCTTCCCCTTCCC  10406
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10241 GCCTCCCAGCTGCTTCCAGCCCTCCGCTGCAGAACCTGCTTCCCCTTCCC  10290
+
+1              10407 ACTTCTCCACCGCGACCCGCCGCAGCCCGAGGGTCCCGGCCCGCCCTCCA  10456
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10291 ACTTCTCCACCGCGACCCGCCGCAGCCCGAGGGTCCCGGCCCGCCCTCCA  10340
+
+1              10457 CCGTCTCCCGGAGTTCCTCATGCATTCCCCAGGGCCCTCACTCGAGGCCC  10506
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10341 CCGTCTCCCGGAGTTCCTCATGCATTCCCCAGGGCCCTCACTCGAGGCCC  10390
+
+1              10507 CTTCAGCCGCCGGCCCGGGCGCCCTCGCAGCGCCGCTCGCCCCCGTCCGC  10556
+                     ||||||||||||||||||||||||||||||||||.|||||||||||||||
+1              10391 CTTCAGCCGCCGGCCCGGGCGCCCTCGCAGCGCCTCTCGCCCCCGTCCGC  10440
+
+1              10557 TCGCGTCCTCCTTGCTCACCTGGTACTGCGCCGCGGGGCCCGCGGGGCCC  10606
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10441 TCGCGTCCTCCTTGCTCACCTGGTACTGCGCCGCGGGGCCCGCGGGGCCC  10490
+
+1              10607 ATGGGGCGGAAGGCGGCGGCCCCGGGGCCCCCCACGCCTCCTGCCGGACC  10656
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10491 ATGGGGCGGAAGGCGGCGGCCCCGGGGCCCCCCACGCCTCCTGCCGGACC  10540
+
+1              10657 CGGTCCCCGGAGCGCCGGTCCGGGCAGCATGCCGGGTCCCGCGGGGGGAG  10706
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10541 CGGTCCCCGGAGCGCCGGTCCGGGCAGCATGCCGGGTCCCGCGGGGGGAG  10590
+
+1              10707 GCGGCGCTACCAGGGCCGCGGCCACGGCGCCGCCGCCAGGGCTTAGCGGG  10756
+                     ||||||||.||||||||||.||||||||||||||||||||||||||||||
+1              10591 GCGGCGCTCCCAGGGCCGCAGCCACGGCGCCGCCGCCAGGGCTTAGCGGG  10640
+
+1              10757 GGCAGCGGGAACCCGCCCGCGCCTCGGCCCGACATCGCTCCGTCCCGTCC  10806
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10641 GGCAGCGGGAACCCGCCCGCGCCTCGGCCCGACATCGCTCCGTCCCGTCC  10690
+
+1              10807 CGCGGTGCCGCGATCCGGACTCCGGGCTCCGCGTCGAGTCCACTCCGTGC  10856
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10691 CGCGGTGCCGCGATCCGGACTCCGGGCTCCGCGTCGAGTCCACTCCGTGC  10740
+
+1              10857 TCTGTGCTCCGCGATCCGGGACTTGGCGATCTTAATTCCGGGTTCCGGGA  10906
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10741 TCTGTGCTCCGCGATCCGGGACTTGGCGATCTTAATTCCGGGTTCCGGGA  10790
+
+1              10907 TTTGTCGATCCGGGCTCCGGGATTTGCTAATCCAAGTTCGCGAGTTCCTC  10956
+                     |||||||||||||||||||||||||.||||||||||||||||||||||||
+1              10791 TTTGTCGATCCGGGCTCCGGGATTTCCTAATCCAAGTTCGCGAGTTCCTC  10840
+
+1              10957 ACAGACCCGGTTCGGGACAGATTCCGCTCCTGCCCGGGAGATTCCGGATC  11006
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10841 ACAGACCCGGTTCGGGACAGATTCCGCTCCTGCCCGGGAGATTCCGGATC  10890
+
+1              11007 CAGGATCTGCTGCGGGCCCGCCTTCCGTCCCCGGCCTCCGGAGGTTTGGC  11056
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10891 CAGGATCTGCTGCGGGCCCGCCTTCCGTCCCCGGCCTCCGGAGGTTTGGC  10940
+
+1              11057 CGCCCGAGTCGAGTTACCCAGAGGCGGCTACGAACTCCCTGCCCCGCCCA  11106
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+1              10941 CGCCCGAGTCGAGTTACCCAGAGGCGGCTACGAACTCCCTGCCCCGCCCA  10990
+
+1              11107 ACCCAGCCCAG  11117
+                     |||||||||||
+1              10991 ACCCAGCCCAG  11001
+
+
+#---------------------------------------
+#---------------------------------------
