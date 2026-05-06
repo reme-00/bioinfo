@@ -17,11 +17,11 @@ echo 'export PATH=$PATH:~/bin/hifiasm' >> ~/.bashrc
 ```
 #EJERCICIO: 
 #¿Cuántas secuencias contiene el archivo?
-en un primer momento lo que haremos será intentar leer el documento sin descomprimirlo.
+# R: en un primer momento lo que haremos será intentar leer el documento sin descomprimirlo.
 ```{bash}
 zgrep -c "^>" ../../data/At4.10.fa.gz
 ```
-obtenemmos un valor de 13812
+# R: obtenemos un valor de 13812
 
 #¿Qué longitudes mínima, media y máxima tienen las secuencias?
 ```{bash}
@@ -31,21 +31,21 @@ zcat ../../data/At4.10.fa.gz | awk '$0 ~ ">" {if (NR > 1) {print c; if
 total+=c; count++; print "Min: " min; print "Max: " max; print "Total: " total; 
 print "Media: " total/count}'
 ```
-usando el comando anterior en Bash obtenemos los siguientes resultados: 
-Min: 2942
-Max: 59075
-Total: 250599484
-Media: 18143.6
+# R: usando el comando anterior en Bash obtenemos los siguientes resultados: 
+# Min: 2942
+# Max: 59075
+# Total: 250599484
+# Media: 18143.6
 
 #¿Cuál es el número total de bases?
 ```{bash}
 zcat ../../data/At4.10.fa.gz | grep -v "^>" | tr -d '\n' | wc -m
 ```
-250599484
+# R: 250599484
 #Si se estimara que el genoma a ensamblar fuera de sólo 19 millones de bases, 
 #¿cuál sería la cobertura esperada?
-usaremos el siguiente conjunto de comandos: 
-  # Contar secuencias
+#usaremos el siguiente conjunto de comandos: 
+# Contar secuencias
 ```{bash}
   zgrep -c "^>" ../../data/At4.10.fa.gz
 ```
@@ -74,13 +74,13 @@ zcat ../../data/At4.10.fa.gz | awk '
         print "Max: " max;
         print "Media: " sum/count;
     }'
-  ```
-y obtenemos los siguientes resultados: 13812
-Num_Secuencias: 13812
-Total_Bases: 250599484
-Min:
-  Max: 59075
-Media: 18143.6
+```
+#R: y obtenemos los siguientes resultados: 13812
+# Num_Secuencias: 13812
+# Total_Bases: 250599484
+# Min:
+# Max: 59075
+# Media: 18143.6
 
 #ENSAMBLAJE: 
 #primero creamos unca carpeta donde lleavremos a capo el siguiente analisis:
@@ -101,56 +101,49 @@ fi
 #EJERCICIO: 
 #Consulta la ayuda de hifiasm (hifiasm -h) y contesta las preguntas siguientes:
 #¿Los parámetros corresponden al ensamblaje de un genoma haploide o diploide?
-Usando el siguiente comando en Bash "hifiasm -h" obtenemos la respuesta: 
-en nuestro caso estamos tratando el ensamblaje como haploide.
+# R: Usando el siguiente comando en Bash "hifiasm -h" obtenemos la respuesta: 
+# en nuestro caso estamos tratando el ensamblaje como haploide.
 
 #¿Qué nivel de eliminación de duplicaciones hemos aplicado? (El paso de eliminar 
 #duplicaciones sirve para que las zonas de alta heterocigosidad no sean 
 #ensambladas como contigs diferentes).
-el nivel de eliminacion está desactivado, esto lo sabemos por el parametro "-f 0"
-el cual controla la purga de contigs duplicatedos. 
+# R: el nivel de eliminacion está desactivado, esto lo sabemos por el parametro "-f 0" el cual controla la purga de contigs duplicatedos. 
 
 #Si tuvieramos lecturas ultra-largas, ¿con qué opción o argumento añadiríamos 
-#esa información
-Usariamos la opcion "--ul <file>" que "file" hace referencia al archivo donde estan
-las lecturas ultra largas en formato FASTA o FASTQ. 
+#esa información?
+# R: Usariamos la opcion "--ul <file>" que "file" hace referencia al archivo donde estan las lecturas ultra largas en formato FASTA o FASTQ. 
 
 #EJERCICIO: 
 #¿Dónde están las secuencias que componen el ensamblaje?
-Los debemos encontrar en los archivos del tipo .gfa, en nuestro caso el
-At4.bp.p_ctg.gfa que hemos generado. 
+#R: Los debemos encontrar en los archivos del tipo .gfa, en nuestro caso el At4.bp.p_ctg.gfa que hemos generado. 
 #En los archivos .gfa, ¿qué son las líneas que empiezan por ‘A’?
-hacen referencia a los caminos de las lecturas, es decir, los "Paths". 
+# R: hacen referencia a los caminos de las lecturas, es decir, los "Paths". 
 #¿Qué información tiene los archivos .bed?
-tienen las coordenadas de los segmentos purgados, es decir, de los descartados y, 
-por lo tanto, los duplicados por heterogeneidad o errores. 
+# R: tienen las coordenadas de los segmentos purgados, es decir, de los descartados y, por lo tanto, los duplicados por heterogeneidad o errores. 
 #¿Cuál es la cobertura media estimada de las secuencias homocigotas?
-este punto se identifica como el pico de mayor cobertura
+# R: este punto se identifica como el pico de mayor cobertura
 #¿Y la de las heterocigotas?
-en este caso el pico  corresponde a la mitad de la cobertura homocigotica. 
+# R: en este caso el pico  corresponde a la mitad de la cobertura homocigotica. 
 
 #CALIDAD DEL ENSAMBLAJE: 
-tras instalar el programa "Compleasm" y tras confirmar que "compleasm.py" esta dentro de "~/bin/compleasm_kit"
-descargamos la lista de genes para el ensamblaje: 
+# R: tras instalar el programa "Compleasm" y tras confirmar que "compleasm.py" esta dentro de "~/bin/compleasm_kit"
+# descargamos la lista de genes para el ensamblaje: 
 ```{bash}
   if [ ! -e asm1_eval/summary.txt ]; then
 python3 ~/bin/compleasm_kit/compleasm.py run \
 -t 2 -l brassicales -a asm1/At4.fa -o asm1_eval
 fi
 ```
-En este comando lo que hacemos es comprobar que los ensamblajes se han dado bien
-"-e asm1_eval/summary.txt" esta primera linea hace que si ya tenemos los resultados, 
-no se vuelvan a ejecutar porque tarda mucho. 
-"python3 ~/bin/compleasm_kit/compleasm.py run" con este comando lo que hacemos es
-hacer que Python ejecute el script. El resto son caracteristicas que quiero que se 
-tengan en cuenta en el momento de la ejecucion. 
+# R: En este comando lo que hacemos es comprobar que los ensamblajes se han dado bien
+# "-e asm1_eval/summary.txt" esta primera linea hace que si ya tenemos los resultados,no se vuelvan a ejecutar porque tarda mucho. 
+# "python3 ~/bin/compleasm_kit/compleasm.py run" con este comando lo que hacemos es hacer que Python ejecute el script. El resto son caracteristicas que quiero que se  tengan en cuenta en el momento de la ejecucion. 
 #RESULTADOS: 
-S:16.17%, 697
-D:0.14%, 6
-F:0.19%, 8
-I:0.00%, 0
-M:83.51%, 3600
-N:4311
+# S:16.17%, 697
+# D:0.14%, 6
+# F:0.19%, 8
+# I:0.00%, 0
+# M:83.51%, 3600
+# N:4311
 
 ## Download lineage: 23.69(s)
 ## Run miniprot: 1649.32(s)
@@ -158,8 +151,7 @@ N:4311
 ## Total runtime: 2127.07(s)
 
 #VISUALIZACION DEL GRAFO: 
-instalamos "Bandage" que es el unico programa de visualizacion de ensamblajes 
-como grafos de fragmentos, para ello usamos el siguiente comando en Bash: 
+# R: instalamos "Bandage" que es el unico programa de visualizacion de ensamblajes  como grafos de fragmentos, para ello usamos el siguiente comando en Bash: 
 
 # 1. Entra en tu carpeta de programas
 ```{bash}
