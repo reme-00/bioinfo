@@ -1,0 +1,15 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+4177at3699_13288_0:00113d|ptg000004l:220483-221290 -            270 4177                 -            529   5.9e-28   84.4   0.0   1   1   7.1e-28   7.1e-28   84.2   0.0   323   528    60   268    41   269 0.85 -
+4177at3699_28532_0:002b8a|ptg000004l:220675-221296 -            208 4177                 -            529   2.4e-27   82.4   0.0   1   1   2.6e-27   2.6e-27   82.3   0.0   330   528     3   204     1   205 0.85 -
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      mb_downloads/brassicales_odb12/hmms/4177at3699.hmm
+# Target file:     -
+# Option settings: /home/reme/bin/compleasm_kit/hmmsearch --domtblout asm1_eval/brassicales_odb12/hmmer_output/4177at3699.out --cpu 1 mb_downloads/brassicales_odb12/hmms/4177at3699.hmm - 
+# Current dir:     /home/reme/bioinfo/results/2026-04-21
+# Date:            Wed May  6 20:48:16 2026
+# [ok]

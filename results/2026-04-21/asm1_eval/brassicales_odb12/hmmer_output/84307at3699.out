@@ -1,0 +1,20 @@
+#                                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+84307at3699_3708_0:014200|ptg000004l:6273293-6273446  -             52 84307                -            321   1.3e-05   13.4   0.0   1   1   1.2e-05   1.4e-05   13.3   0.0     8    38     8    38     2    51 0.79 -
+84307at3699_3728_0:0098e9|ptg000004l:6273293-6273446  -             52 84307                -            321   1.3e-05   13.4   0.0   1   1   1.2e-05   1.4e-05   13.3   0.0     8    38     8    38     2    51 0.79 -
+84307at3699_13288_0:001c35|ptg000004l:6273239-6273446 -             70 84307                -            321     2e-05   12.7   0.0   1   1   1.9e-05   2.1e-05   12.7   0.0     8    38     8    38     2    62 0.78 -
+84307at3699_71354_0:005ef3|ptg000004l:6273239-6273446 -             70 84307                -            321     2e-05   12.7   0.0   1   1   1.9e-05   2.1e-05   12.7   0.0     8    38     8    38     2    62 0.78 -
+84307at3699_3728_0:00bf7a|ptg000004l:6273239-6273443  -             69 84307                -            321   2.1e-05   12.7   0.0   1   1   1.8e-05   2.1e-05   12.7   0.0     8    38     7    37     1    61 0.78 -
+84307at3699_3726_0:0074f2|ptg000004l:6273233-6273446  -             72 84307                -            321   2.1e-05   12.7   0.0   1   1     2e-05   2.2e-05   12.6   0.0     8    38     8    38     2    64 0.78 -
+84307at3699_3708_0:008c52|ptg000004l:6273350-6273446  -             33 84307                -            321   3.3e-05   12.1   0.0   1   1   2.9e-05   3.3e-05   12.1   0.0     6    31     6    31     1    33 0.79 -
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      mb_downloads/brassicales_odb12/hmms/84307at3699.hmm
+# Target file:     -
+# Option settings: /home/reme/bin/compleasm_kit/hmmsearch --domtblout asm1_eval/brassicales_odb12/hmmer_output/84307at3699.out --cpu 1 mb_downloads/brassicales_odb12/hmms/84307at3699.hmm - 
+# Current dir:     /home/reme/bioinfo/results/2026-04-21
+# Date:            Wed May  6 20:46:55 2026
+# [ok]

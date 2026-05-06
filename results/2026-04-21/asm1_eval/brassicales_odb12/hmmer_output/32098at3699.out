@@ -1,0 +1,17 @@
+#                                                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+32098at3699_50452_0:0044bd|ptg000004l:7819910-7820524   -            106 32098                -            260     1e-19   58.3   0.1   1   1   1.1e-19   1.1e-19   58.2   0.1   120   213     8   105     1   106 0.84 -
+32098at3699_586526_0:005afa|ptg000004l:7819910-7820524  -            106 32098                -            260     1e-19   58.3   0.1   1   1   1.1e-19   1.1e-19   58.2   0.1   120   213     8   105     1   106 0.84 -
+32098at3699_1685480_0:004917|ptg000004l:7819697-7820554 -            187 32098                -            260   1.1e-19   58.2   0.1   1   2      0.18      0.18   -1.6   1.7    13    33    29    49    14    75 0.46 -
+32098at3699_1685480_0:004917|ptg000004l:7819697-7820554 -            187 32098                -            260   1.1e-19   58.2   0.1   2   2   1.1e-19   1.1e-19   58.2   0.1   120   216    79   179    66   186 0.82 -
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      mb_downloads/brassicales_odb12/hmms/32098at3699.hmm
+# Target file:     -
+# Option settings: /home/reme/bin/compleasm_kit/hmmsearch --domtblout asm1_eval/brassicales_odb12/hmmer_output/32098at3699.out --cpu 1 mb_downloads/brassicales_odb12/hmms/32098at3699.hmm - 
+# Current dir:     /home/reme/bioinfo/results/2026-04-21
+# Date:            Wed May  6 20:46:01 2026
+# [ok]

@@ -1,2 +1,4 @@
 results/2026-02-24/DRR025089_m_clean.fastq filter=lfs diff=lfs merge=lfs -text
 results/2026-02-24_P2/DRR025089_m_clean.fastq filter=lfs diff=lfs merge=lfs -text
+results/2026-04-21/asm1_eval/brassicales_odb12/miniprot_output.gff filter=lfs diff=lfs merge=lfs -text
+results/2026-04-21/mb_downloads/brassicales_odb12.2025-07-01.tar.gz filter=lfs diff=lfs merge=lfs -text

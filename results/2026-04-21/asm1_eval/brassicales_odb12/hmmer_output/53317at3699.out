@@ -1,0 +1,17 @@
+#                                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+53317at3699_3702_0:001ab8|ptg000004l:8646396-8646913  -            144 53317                -            244   2.3e-41  129.8   5.0   1   1   2.7e-41   2.7e-41  129.6   5.0    19   150     9   143     5   144 0.94 -
+53317at3699_50452_0:000169|ptg000004l:8646396-8646913 -            144 53317                -            244   2.3e-41  129.8   5.0   1   1   2.7e-41   2.7e-41  129.6   5.0    19   150     9   143     5   144 0.94 -
+53317at3699_3649_0:002c00|ptg000004l:8646414-8646886  -            129 53317                -            244   1.3e-39  124.1   5.4   1   1   1.4e-39   1.4e-39  124.0   5.4    20   144     1   128     1   129 0.95 -
+53317at3699_28532_0:005673|ptg000004l:8645920-8646886 -            221 53317                -            244   2.3e-39  123.3   8.4   1   1   7.9e-39   7.9e-39  121.5   8.4    20   243     1   220     1   221 0.83 -
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      mb_downloads/brassicales_odb12/hmms/53317at3699.hmm
+# Target file:     -
+# Option settings: /home/reme/bin/compleasm_kit/hmmsearch --domtblout asm1_eval/brassicales_odb12/hmmer_output/53317at3699.out --cpu 1 mb_downloads/brassicales_odb12/hmms/53317at3699.hmm - 
+# Current dir:     /home/reme/bioinfo/results/2026-04-21
+# Date:            Wed May  6 20:47:04 2026
+# [ok]

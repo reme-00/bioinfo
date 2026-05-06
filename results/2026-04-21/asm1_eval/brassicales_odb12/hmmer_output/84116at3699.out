@@ -1,0 +1,20 @@
+#                                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+84116at3699_3728_0:00c108|ptg000004l:1735550-1736003  -            152 84116                -            154   1.9e-36  114.1  13.4   1   1     2e-34     2e-34  107.5  13.4    29   149     2   140     1   145 0.79 -
+84116at3699_81985_0:006639|ptg000004l:1735550-1735964 -            139 84116                -            154   2.1e-36  114.0  12.9   1   1   2.2e-34   2.2e-34  107.4  12.9    29   146     2   137     1   139 0.79 -
+84116at3699_3726_0:001ae1|ptg000004l:1735550-1735961  -            138 84116                -            154   2.4e-36  113.8  12.8   1   1   2.6e-34   2.6e-34  107.2  12.8    29   145     2   136     1   138 0.79 -
+84116at3699_52824_0:005ccc|ptg000004l:1735550-1735961 -            138 84116                -            154   2.4e-36  113.8  12.8   1   1   2.6e-34   2.6e-34  107.2  12.8    29   145     2   136     1   138 0.79 -
+84116at3699_71354_0:006926|ptg000004l:1735550-1735961 -            138 84116                -            154   2.4e-36  113.8  12.8   1   1   2.6e-34   2.6e-34  107.2  12.8    29   145     2   136     1   138 0.79 -
+84116at3699_50452_0:0042fe|ptg000004l:1735550-1735958 -            137 84116                -            154     3e-36  113.4  13.0   1   1   3.3e-34   3.3e-34  106.8  13.0    29   145     2   136     1   137 0.79 -
+84116at3699_3649_0:00423f|ptg000004l:3720657-3720945  -             97 84116                -            154     4e-26   80.6   0.8   1   1   4.3e-26   4.3e-26   80.5   0.8    79   148     7    77     1    83 0.86 -
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      mb_downloads/brassicales_odb12/hmms/84116at3699.hmm
+# Target file:     -
+# Option settings: /home/reme/bin/compleasm_kit/hmmsearch --domtblout asm1_eval/brassicales_odb12/hmmer_output/84116at3699.out --cpu 1 mb_downloads/brassicales_odb12/hmms/84116at3699.hmm - 
+# Current dir:     /home/reme/bioinfo/results/2026-04-21
+# Date:            Wed May  6 20:48:29 2026
+# [ok]

@@ -1,0 +1,17 @@
+#                                                                                                              --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                          accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                  ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+1243at3699_29727_0:00621e|ptg000004l:11059316-11059493 -             60 1243                 -            434   2.4e-07   17.8   0.1   1   1   2.4e-07   2.4e-07   17.8   0.1   314   363    13    59     1    60 0.75 -
+1243at3699_29727_0:0033f7|ptg000004l:11059319-11059493 -             59 1243                 -            434   2.7e-07   17.6   0.1   1   1   2.7e-07   2.7e-07   17.6   0.1   322   363    16    58     1    59 0.76 -
+1243at3699_50452_0:0045ce|ptg000004l:11059319-11059493 -             59 1243                 -            434   2.7e-07   17.6   0.1   1   1   2.7e-07   2.7e-07   17.6   0.1   322   363    16    58     1    59 0.76 -
+1243at3699_69181_0:0088bb|ptg000004l:11059319-11059493 -             59 1243                 -            434   2.7e-07   17.6   0.1   1   1   2.7e-07   2.7e-07   17.6   0.1   322   363    16    58     1    59 0.76 -
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      mb_downloads/brassicales_odb12/hmms/1243at3699.hmm
+# Target file:     -
+# Option settings: /home/reme/bin/compleasm_kit/hmmsearch --domtblout asm1_eval/brassicales_odb12/hmmer_output/1243at3699.out --cpu 1 mb_downloads/brassicales_odb12/hmms/1243at3699.hmm - 
+# Current dir:     /home/reme/bioinfo/results/2026-04-21
+# Date:            Wed May  6 20:49:00 2026
+# [ok]

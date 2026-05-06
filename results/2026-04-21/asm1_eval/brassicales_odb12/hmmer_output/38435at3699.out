@@ -1,0 +1,18 @@
+#                                                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+38435at3699_50452_0:00108c|ptg000004l:11540226-11541618 -            465 38435                -            972   4.8e-52  164.0   5.2   1   3   9.3e-18   9.3e-18   50.5   0.2   504   671    56   222    41   229 0.95 -
+38435at3699_50452_0:00108c|ptg000004l:11540226-11541618 -            465 38435                -            972   4.8e-52  164.0   5.2   2   3   2.5e-21   2.5e-21   62.3   0.1   294   410   230   346   225   348 0.97 -
+38435at3699_50452_0:00108c|ptg000004l:11540226-11541618 -            465 38435                -            972   4.8e-52  164.0   5.2   3   3   6.9e-19   6.9e-19   54.2   0.2   505   634   336   465   335   465 0.89 -
+38435at3699_3649_0:002a7b|ptg000004l:5132102-5133302    -            348 38435                -            972   6.6e-39  120.5   0.2   1   2   4.1e-25   4.1e-25   74.8   0.0   505   676    47   218    18   221 0.94 -
+38435at3699_3649_0:002a7b|ptg000004l:5132102-5133302    -            348 38435                -            972   6.6e-39  120.5   0.2   2   2   9.3e-16   9.3e-16   43.8   0.0   503   630   220   347   218   348 0.94 -
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      mb_downloads/brassicales_odb12/hmms/38435at3699.hmm
+# Target file:     -
+# Option settings: /home/reme/bin/compleasm_kit/hmmsearch --domtblout asm1_eval/brassicales_odb12/hmmer_output/38435at3699.out --cpu 1 mb_downloads/brassicales_odb12/hmms/38435at3699.hmm - 
+# Current dir:     /home/reme/bioinfo/results/2026-04-21
+# Date:            Wed May  6 20:46:02 2026
+# [ok]
