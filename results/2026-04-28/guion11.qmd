@@ -1,0 +1,99 @@
+#PRACTICA 11: ANOTACION
+
+#EJERCICIO: 
+#En un primer momento nos debemos descargar las proteinas del cromosoma 4 de A.thaliana, de modo que al pinchar en el enlace que nos facilita la práctica vemos que las 6023 proteinas que necesitamos se consiguen descargando el archivo completo que nos ofrece esta direccion y, hacerlo en formato FASTA. 
+
+#ahora pasamos a modficar los nombres para abreviarlos 
+
+```{bash}
+#| label: ejercicio-1
+# Definición de variables
+INPUT="A_thaliana_chr4_proteins.fasta"  # Ajusta si está en data/
+OUTPUT="proteinas.fasta"
+
+# Lógica condicional
+if [ ! -f "$OUTPUT" ]; then
+    echo "Procesando el archivo..."
+    awk '(/^>/){split($1, A, /\|/); print ">" A[2]}(/^[^>]/){print $0}' "$INPUT" > "$OUTPUT"
+    echo "Archivo $OUTPUT generado con éxito."
+else
+    echo "El archivo $OUTPUT ya existe. No se requiere acción."
+fi
+```
+
+```{bash}
+awk '(/^>/){split($1, A, /\|/); print ">" A[2]}(/^[^>]/){print $0}'
+```
+
+#analisis de los resultados de RepeatModeler
+
+```{bash}
+# Paso previo para convertir el ensamblaje en una base de datos de BLAST:
+BuildDatabase -name At4 ../2026-04-16/asm1/At4.fa
+
+RepeatModeler -database At4 -threads 6 >& run.log
+```
+
+#despues descomprimimos los documentos descargados desde el AV: 
+
+```{bash} 
+unzip RepeatModelerResults.zip
+```
+
+#EJERCICIO: Explora los resultados de RepeatModeler y trata de contestar las preguntas siguientes.
+#¿Cuántas familias de elementos transponibles se han encontrado?
+#R: 
+```{bash}
+grep -c "^>" At4-families.fa
+```
+#R: 24
+#¿Cuánto duró la ejecución del programa?
+```{bash}
+ tail -n 20 rmod.log
+```
+#R:Classification Time: 00:00:32 (hh:mm:ss) Elapsed Time
+#Program Time: 01:02:16 (hh:mm:ss) Elapsed Time
+ 
+#¿Cuál dirías que es el archivo de salida más importante?
+
+#R: el archivo mas importante debe ser el que contenga todas las secuencias consenso de todas las familias del repositorio. el "At4-families.fa"
+
+#suavizar la mascara: 
+
+#EJERCICIO: 
+# 1. Instala el programa bedtools siguiendo las instrucciones oportunas para tu sistema en la página oficial
+# 2. Utiliza el ensamblaje original como archivo FASTA de entrada y el archivo GFF que ha producido RepetaMasker como coordenadas de las regiones a enmascarar. Lee el manual de bedtools maskfasta en este enlace y genera el ensamblaje con máscara suave llamado At4.soft.fa.
+```{bash}
+bedtools maskfasta -soft -fi ../../data/At4.fa -bed ../../data/RM01/At4.fa.out.gff -fo At4.so
+ft.fa
+```
+
+
+#GALBA: 
+
+```{bash}
+export TSEBRA_PATH=/home/joiglu/bin/TSEBRA/bin/
+export MINIPROTHINT_PATH=/home/joiglu/bin/miniprothint/
+
+galba.pl --species="Arabidopsis thaliana" \
+         --genome=At4.soft.fa \
+         --prot_seq=proteinas.fasta
+```
+
+#EJERCICIO: 
+#Incluye en tu documento de Quarto un bloque de código (pero no ejecutable, con la opción eval: false) como el anterior, donde los caminos TSERBA y a MINIPROTHINT se correspondan con tu propia carpeta bin, aunque no los tengas instalados.
+
+#R: de este ejercicio entiendo que debo de modificar el codigo para que la direccion que le estoy poniendo sea acorde con las direcciones de mi ordenador concrcetamente. 
+#| eval: false
+export TSEBRA_PATH=/home/reme/bin/TSEBRA/bin/
+export MINIPROTHINT_PATH=/home/reme/bin/miniprothint/
+
+galba.pl --species="Arabidopsis thaliana" \
+         --genome=At4.soft.fa \
+         --prot_seq=proteinas.fasta
+         
+#desde la carpeta "data" donde hemos descargado los resultados de GALBA la descomprimimos: 
+```{bash}
+ unzip galba.zip
+```
+# y observamos los resultados:  
