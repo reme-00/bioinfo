@@ -1,0 +1,336 @@
+#PRÁCTICA 12: ANALISIS DE EXPRESIÓN DIFERENCIAL
+
+# 1. Crea una carpeta R en tu directorio de entrada al ordenador.
+# 2. Inicia una sesión de R y añade el directorio al .libPaths, así: .libPaths('./R') (suponiendo que tu directorio de trabajo es el mismo donde has creado la carpeta R).
+# 3. Actualiza la versión de BiocManager a la 3.22 de la siguiente manera (atención, esto lleva un par de horas): BiocManager::install(version = '3.22', lib = './R').
+# 4. Instala el paquete DESeq2: BiocManager::install('DESeq2', lib = './R').
+```{r}
+.libPaths('./R')
+
+
+install.packages("BiocManager")
+
+library(BiocManager)
+
+BiocManager::install(version = "3.22", lib = "./R")
+
+BiocManager::install("DESeq2", lib = "./R")
+
+library(DESeq2)
+```
+
+#Exploracion de datos: 
+#   cargamos los datos
+```{r}
+muestras <- read.table('../../data/dme_elev_samples.tsv', header = TRUE)
+genex <- read.table('../../data/salmon.merged.gene_counts.tsv',
+                    header = TRUE)
+```
+
+#EJERCICIO: 
+# 1. Usa la función paste() para añadir una columna a muestras que contenga la población y la temperatura unidas por _.
+# R: 
+```{r}
+muestras$grupo <- paste(muestras$region,
+                        muestras$temperature,
+                        sep = "_")
+```
+
+#comprobamos que ha salido con: 
+```{r}
+head(muestras)
+```
+# R: 
+#  sample population temp
+# 1 SRR1576457      maine  low
+# 2 SRR1576458      maine  low
+# 3 SRR1576459      maine  low
+# 4 SRR1576460      maine high
+# 5 SRR1576461      maine high
+# 6 SRR1576462      maine high
+
+# 2. ¿Cuál es el número total de lecturas por muestra?
+
+```{r}
+total_lecturas <- colSums(genex[ , -c(1,2)])
+
+total_lecturas
+```
+
+# R: SRR1576457 SRR1576458 SRR1576459 SRR1576460 SRR1576461 SRR1576462 SRR1576463
+#  28252778   21565448   29471559   27692134   26953900   29368135   29706071
+# SRR1576464 SRR1576465 SRR1576514 SRR1576515 SRR1576516
+#  26757043   26596118   30950499   25563787   24401671
+
+# 3. ¿Los recuentos tienen distribuciones parecidas entre muestras?
+
+# R: 
+```{r}
+ boxplot(log2(genex[ , -c(1,2)] + 1),
+        las = 2,
+        col = "lightblue",
+        ylab = "log2(count + 1)")
+```
+#excluimos las dos primeras columnas porque no presentan valores numericos. 
+
+# 4. ¿Cuántos genes no se expresan en absoluto en ninguna de las muestras?
+
+# R: 
+```{r}
+ genes_no_expresados <- sum(rowSums(genex[ , -c(1,2)]) == 0)
+
+genes_no_expresados
+```
+# R: [1] 4722
+
+#CREAR EL OBJETO DE CLASE DESeqDataSet
+
+# 1- necesitamos que las filas de la tabla "muestras" esten en el mismo orden que las columnas en "genex"
+```{r}
+suppressMessages(library('DESeq2'))
+all(names(genex)[3:14] == muestras$sample)
+```
+# R: [1] TRUE
+
+```{r}
+ # Pasamos la columna "sample" a nombres de fila:
+row.names(muestras) <- muestras$sample
+# Eliminamos la columna "sample":
+muestras$sample <- NULL
+# Y convertimos "population" y "temp" en factores:
+muestras$population <- factor(muestras$population,
+                              levels = c('maine', 'panama'))
+muestras$temp       <- factor(muestras$temp,
+                              levels = c('low', 'high'))
+muestras
+```
+
+#         population temp
+# SRR1576457      maine  low
+# SRR1576458      maine  low
+# SRR1576459      maine  low
+# SRR1576460      maine high
+# SRR1576461      maine high
+# SRR1576462      maine high
+# SRR1576463     panama  low
+# SRR1576464     panama  low
+# SRR1576465     panama  low
+# SRR1576514     panama high
+# SRR1576515     panama high
+# SRR1576516     panama high
+
+```{r}
+row.names(genex) <- genex$gene_name
+genex$gene_name <- NULL
+genex$gene_id   <- NULL
+genex <- round(as.matrix(genex))
+```
+
+```{r}
+dds1 <- DESeqDataSetFromMatrix(
+   countData = genex,
+   colData = muestras,
+   design = ~ population + temp
+)
+dds1
+```
+# R: converting counts to integer mode
+# class: DESeqDataSet
+# dim: 24254 12
+# metadata(1): version
+# assays(1): counts
+# rownames(24254): 7SLRNA:CR32864 a ... RR51477 Bari1{}RR51478
+# rowData names(0):
+# colnames(12): SRR1576457 SRR1576458 ... SRR1576515 SRR1576516
+# colData names(2): population temp
+
+#PRE-FILTRADO: 
+
+#filtracion de genes que no se esten expresando en ninguna muestra. 
+```{r}
+keep <- rowSums(counts(dds1)) > 0
+dds1 <- dds1[keep, ]
+```
+
+#EXPRESIÓN DIFERENCIAL: 
+```{R}
+dds1 <- DESeq(dds1)
+```
+# R: estimating size factors
+# estimating dispersions
+# gene-wise dispersion estimates
+# mean-dispersion relationship
+# final dispersion estimates
+# fitting model and testing
+
+```{r}
+res <- results(dds1)
+res
+```
+# R: log2 fold change (MLE): temp high vs low
+# Wald test p-value: temp high vs low
+# DataFrame with 19508 rows and 6 columns
+#               baseMean log2FoldChange     lfcSE       stat      pvalue
+#               <numeric>      <numeric> <numeric>  <numeric>   <numeric>
+# 7SLRNA:CR32864   346.333      0.5918974 1.3301901   0.444972 0.656339979
+# a                555.596     -0.2730041 0.0718487  -3.799710 0.000144866
+# abd-A            531.996     -0.0286785 0.0789218  -0.363379 0.716321732
+# Abd-B            634.760     -0.1083918 0.0771241  -1.405421 0.159896272
+# Abl             1654.842     -0.1328055 0.0746580  -1.778851 0.075264257
+# ...                  ...            ...       ...        ...         ...
+# RR51007          4.90906      3.8596869  2.972471  1.2984773 1.94123e-01
+# RR51048         16.60710     -0.8973071  0.341603 -2.6267541 8.62036e-03
+# RR51093         36.93279      0.0660523  1.685323  0.0391927 9.68737e-01
+# RR51475        159.62678     -2.6058194  1.875172 -1.3896429 1.64637e-01
+# RR51477         70.83394      1.6927986  0.192437  8.7966393 1.40975e-18
+#                       padj
+#                 <numeric>
+#7SLRNA:CR32864  0.81170166
+# a               0.00154573
+# abd-A           0.85146289
+# Abd-B           0.33849217
+# Abl             0.20046220
+#...                    ...
+# RR51007        3.82417e-01
+# RR51048        4.01745e-02
+# RR51093        9.84464e-01
+# RR51475        3.44815e-01
+# RR51477        2.06427e-16
+
+#EJERCICIO: 
+
+# 1. Mira la ayuda de results() y genera también la tabla de resultados para el contraste entre las dos regiones de procedencia de las moscas.
+```{r}
+resultsNames(dds1)
+```
+# R: [1] "Intercept"                  "population_panama_vs_maine"
+# [3] "temp_high_vs_low"
+
+```{r}
+res_pop <- results(dds1,
+                   contrast = c("population",
+                                "panama",
+                                "maine"))
+
+res_pop
+```
+# R: de todos los valores que nos da el Log2FoldChange, aquellos que sean positivos tendrán una mayor expresión en Panamá, emintras que aquellos valores con signo negativo tendrán mayor expresion en Maine
+
+# 2. Usa summary() sobre los resultados para ver el número de genes diferencialmente expresados entre cada par de condiciones.
+
+```{r}
+summary(res)
+```
+# R: out of 19508 with nonzero total read count
+# adjusted p-value < 0.1
+# LFC > 0 (up)       : 2418, 12%
+# LFC < 0 (down)     : 2336, 12%
+# outliers [1]       : 90, 0.46%
+# low counts [2]     : 3018, 15%
+# (mean count < 2)
+#  [1] see 'cooksCutoff' argument of ?results
+
+```{r}
+summary(res_pop)
+```
+# R: out of 19508 with nonzero total read count
+# adjusted p-value < 0.1
+# LFC > 0 (up)       : 623, 3.2%
+# LFC < 0 (down)     : 634, 3.2%
+# outliers [1]       : 90, 0.46%
+# low counts [2]     : 3018, 15%
+# (mean count < 2)
+# [1] see 'cooksCutoff' argument of ?results
+# [2] see 'independentFiltering' argument of ?results
+# [2] see 'independentFiltering' argument of ?results
+
+# 3. ¿Cuál es la tasa de falsos positivos (FDR)?
+
+# R: esto hace referencia al umbral usado para el "adjusted p-value", donde alfa= 0.1, luego el FDR= 10%
+
+#GRAFICAS: 
+```{r}
+plotMA(res)
+```
+
+```{r}
+resShrink <- lfcShrink(dds1, coef = 'temp_low_vs_high',
+                       type = 'normal')
+plotMA(resShrink)
+```
+#NOTA: el codigo que ponia en el guion de la practica tenia mal escrito el nombre del documento, ponia "temp_high_vs_low" y asi no era como lo habia cargado yo, asi que lo he modificado porque no lo encontraba. 
+
+#EJERCICIO: 
+# 1. ¿sabrías hacer una gráfica volcan?
+
+```{r}
+plot(resShrink$log2FoldChange,
+     -log10(resShrink$padj),
+     pch = 20,
+     xlab = "log2 Fold Change",
+     ylab = "-log10 adjusted p-value",
+     main = "Volcano plot")
+```
+
+```{r}
+sig <- resShrink$padj < 0.05
+
+plot(resShrink$log2FoldChange,
+     -log10(resShrink$padj),
+     pch = 20,
+     col = ifelse(sig, "red", "black"),
+     xlab = "log2 Fold Change",
+     ylab = "-log10 adjusted p-value",
+     main = "Volcano plot")
+
+abline(h = -log10(0.05), col = "blue", lty = 2)
+abline(v = c(-1, 1), col = "grey", lty = 2)
+```
+
+#EXTRAER DATOS TRANSFORMADOS: 
+
+```{r}
+dds2 <- vst(dds1)
+NormCounts <- assay(dds2)
+```
+
+```{r}
+res <- res[! is.na(res$pvalue), ]
+res <- res[order(res$log2FoldChange),]
+heatmap(NormCounts[c(head(row.names(res), 100),
+                     tail(row.names(res), 100)), ],
+        Rowv = NA, Colv = NA)
+```
+
+#EJERCICIOS: 
+
+# 1. ¿Podrías explicar qué hace el bloque de código anterior?
+
+# R: el comando "res" limpia los resultados, es decir, elimina los genes con datos incompletos. Este con el comando "order" ordena los genes por efecto. 
+# el comando "heatmap" selecciona los 100 genes mas altos y los 100 mas bajos y dibuja una grafica.
+
+# 2. En este enlace analizan exactamente los mismos datos con otro paquete de R: limma. Una de sus conclusiones es se sobreexpresan más genes en temperatura baja que en temperatura alta. ¿Confirma tu análisis esta conclusión?
+
+# R: Aqui debemos comprobar (lo haré con mis datos primero) si los genes se sobreexpresan mas en temperaturas bajas que en altas, de modo que para ello asumimos dos premisas: 
+# log2FC > 0 → más expresión en high
+# log2FC < 0 → más expresión en low
+```{r}
+sum(res$log2FoldChange > 0, na.rm = TRUE)
+sum(res$log2FoldChange < 0, na.rm = TRUE)
+```
+# R: [1] 9620 [1] 9888
+# esto quiere decir que 9620 cumplen la primera premisa y 9888 la segunda, por lo tanto hay mas con un log2FoldChange < 0, lo que significa que hay mas genes con sobreexpresion a bajas temperaturas. 
+
+# son los 10 genes más diferencialmente expresados según aquel análisis entre las condiciones de baja y alta temperatura:
+
+#                   logFC  AveExpr         t      P.Value    adj.P.Val        B
+# Cpr92F          2.473527 6.201774  24.28881 1.306910e-13 1.739105e-09 21.29258
+# Vajk3           1.675184 4.029281  21.90298 6.069753e-13 3.524528e-09 19.66813
+# lncRNA:CR46017 -3.974938 1.044005 -21.50807 7.945880e-13 3.524528e-09 16.80878
+# CG7214          2.198970 7.945664  20.75054 1.349821e-12 4.490516e-09 19.14847
+# CG3739         -2.869172 6.514652 -20.49734 4.414988e-12 1.175005e-08 18.01975
+# Acp1            2.231834 7.638125  17.79441 2.089853e-11 3.997808e-08 16.54909
+# ¿Cómo se comparan estos resultados con los tuyos?
+
+# R: observando los valores del enunciado podemos ver la cantidad de valores de log2FoldChange negativos, y los positivos. 
+# observamos que solo hay 4 valores negativos, por lo que la mayoria de genes se sobreexpresan a temperaturas altas. 
